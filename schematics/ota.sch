@@ -6,55 +6,55 @@ V {}
 S {}
 E {}
 N -80 -60 0 -60 {
-lab=#net8}
+lab=#net1}
 N 0 -60 80 -60 {
-lab=#net8}
+lab=#net1}
 N 200 80 200 140 {
-lab=#net9}
+lab=#net2}
 N -120 -260 -80 -260 {
-lab=#net10}
+lab=#net3}
 N 80 -260 120 -260 {
-lab=#net11}
+lab=#net4}
 N -200 110 -90 110 {
-lab=#net12}
+lab=#net5}
 N 90 110 200 110 {
-lab=#net9}
+lab=#net2}
 N -170 170 170 170 {
-lab=#net13}
+lab=#net6}
 N 90 0 200 0 {
 lab=Vout_n}
 N -200 0 -90 0 {
 lab=Vout_p}
 N 150 -290 170 -290 {
-lab=#net11}
+lab=#net4}
 N 160 -290 160 -260 {
-lab=#net11}
+lab=#net4}
 N 120 -260 160 -260 {
-lab=#net11}
+lab=#net4}
 N -160 -260 -120 -260 {
-lab=#net10}
+lab=#net3}
 N -160 -290 -160 -260 {
-lab=#net10}
+lab=#net3}
 N -170 -290 -150 -290 {
-lab=#net10}
+lab=#net3}
 N -170 60 170 60 {
-lab=#net14}
+lab=#net7}
 N -200 90 -200 140 {
-lab=#net12}
+lab=#net5}
 N -200 -200 -200 30 {
 lab=Vout_p}
 N 200 -200 200 30 {
 lab=Vout_n}
 N -80 -90 -80 -60 {
-lab=#net8}
+lab=#net1}
 N 80 -90 80 -60 {
-lab=#net8}
+lab=#net1}
 N -80 -150 80 -260 {
-lab=#net11}
+lab=#net4}
 N -80 -260 80 -150 {
-lab=#net10}
+lab=#net3}
 N -60 30 -60 190 {
-lab=D_n}
+lab=Vinv_p}
 N 60 30 60 190 {
 lab=D_p}
 C {devices/ipin.sym} -110 -120 0 0 {name=p5 lab=Vin_n}
@@ -326,5 +326,5 @@ C {madvlsi/gnd.sym} 0 0 0 0 {name=l14 lab=GND}
 C {devices/ipin.sym} -230 -230 0 0 {name=p10 lab=Vcp}
 C {devices/ipin.sym} -30 -30 0 0 {name=p11 lab=Vb}
 C {devices/lab_pin.sym} 230 -230 2 0 {name=p12 sig_type=std_logic lab=Vcp}
-C {devices/ipin.sym} -60 190 1 1 {name=p13 lab=D_n}
+C {devices/ipin.sym} -60 190 1 1 {name=p13 lab=Vinv_p}
 C {devices/ipin.sym} 60 190 1 1 {name=p14 lab=D_p}
