@@ -133,9 +133,9 @@ N 490 -90 490 -20 {
 lab=#net2}
 N 1080 -90 1080 -20 {
 lab=#net7}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/OTA_minus.sym} 0 30 0 0 {name=x1 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/OTA_plus.sym} 700 30 0 0 {name=x2 W_U=0.5 L_U=12}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/comp.sym} 235 -440 0 0 {name=x3 W_U=0.5 L_U=12}
+C {./OTA_minus.sym} 0 30 0 0 {name=x1 W_U=12 L_U=0.5}
+C {./OTA_plus.sym} 700 30 0 0 {name=x2 W_U=0.5 L_U=12}
+C {./comp.sym} 235 -440 0 0 {name=x3 W_U=0.5 L_U=12}
 C {madvlsi/nmos3.sym} 410 -120 1 0 {name=M1
 L=0.5
 W=24

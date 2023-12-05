@@ -57,13 +57,13 @@ N -190 -410 130 -410 {
 lab=#net1}
 N 130 -410 130 -290 {
 lab=#net1}
-C {ENGR3426-MADVLSI/final_project/schematics/ota.sym} -560 -10 0 0 {name=X1}
+C {./ota.sym} -560 -10 0 0 {name=X1}
 C {devices/ipin.sym} 350 -120 0 0 {name=p5 lab=RCLP_p}
 C {devices/ipin.sym} 350 30 0 0 {name=p8 lab=STOP_p}
 C {devices/ipin.sym} 410 -120 2 0 {name=p7 lab=RCLP_n}
 C {devices/ipin.sym} 410 30 2 0 {name=p10 lab=STOP_n}
-C {ENGR3426-MADVLSI/final_project/schematics/ota.sym} 560 -10 0 1 {name=X2}
-C {ENGR3426-MADVLSI/final_project/schematics/comp_pretty.sym} -250 -420 0 0 {name=X3}
+C {./ota.sym} 560 -10 0 1 {name=X2}
+C {./comp_pretty.sym} -250 -420 0 0 {name=X3}
 C {madvlsi/capacitor.sym} 160 30 0 1 {name=Cp1
 value=C
 m=1}
@@ -138,20 +138,13 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/vdd.sym} -40 -360 0 0 {name=l3 lab=VDD}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} 380 -120 0 0 {}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} 160 -30 2 0 {}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} 0 0 1 0 {}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} 380 30 0 0 {}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} 740 -120 2 0 {}
 C {devices/lab_pin.sym} 710 -120 0 0 {name=p12 sig_type=std_logic lab=STOP_n}
 C {devices/lab_pin.sym} 770 -120 2 0 {name=p13 sig_type=std_logic lab=STOP_p}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} 740 30 2 0 {}
 C {devices/lab_pin.sym} 710 30 0 0 {name=p17 sig_type=std_logic lab=RCLP_n}
 C {devices/lab_pin.sym} 770 30 2 0 {name=p18 sig_type=std_logic lab=RCLP_p}
 C {madvlsi/vdd.sym} 910 -60 0 0 {name=l4 lab=VDD}
 C {devices/lab_pin.sym} 880 -30 0 0 {name=p19 sig_type=std_logic lab=PRE_n}
 C {devices/lab_pin.sym} 940 -30 2 0 {name=p20 sig_type=std_logic lab=PRE_p}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} 910 -30 2 0 {}
 C {madvlsi/capacitor.sym} 910 30 0 1 {name=Cpp
 value=C
 m=1}
@@ -169,19 +162,14 @@ C {devices/lab_pin.sym} -130 -30 0 1 {name=p23 sig_type=std_logic lab=PRE_n}
 C {devices/lab_pin.sym} -190 -30 2 1 {name=p24 sig_type=std_logic lab=PRE_p}
 C {devices/lab_pin.sym} -640 -90 2 1 {name=p25 sig_type=std_logic lab=D_n}
 C {devices/lab_pin.sym} -480 -90 0 1 {name=p26 sig_type=std_logic lab=D_p}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} -380 -120 0 1 {}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} -160 -30 2 1 {}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} -380 30 0 1 {}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} -740 -120 2 1 {}
 C {devices/lab_pin.sym} -710 -120 0 1 {name=p29 sig_type=std_logic lab=STON_n}
 C {devices/lab_pin.sym} -770 -120 2 1 {name=p30 sig_type=std_logic lab=STON_p}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} -740 30 2 1 {}
 C {devices/lab_pin.sym} -710 30 0 1 {name=p31 sig_type=std_logic lab=RCLN_n}
 C {devices/lab_pin.sym} -770 30 2 1 {name=p32 sig_type=std_logic lab=RCLN_p}
 C {madvlsi/vdd.sym} -910 -60 0 1 {name=l9 lab=VDD}
 C {devices/lab_pin.sym} -880 -30 0 1 {name=p33 sig_type=std_logic lab=PRE_n}
 C {devices/lab_pin.sym} -940 -30 2 1 {name=p34 sig_type=std_logic lab=PRE_p}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} -910 -30 2 1 {}
+C {./switch.sym} -910 -30 2 1 {}
 C {madvlsi/capacitor.sym} -910 30 0 0 {name=Cnn
 value=C
 m=1}
@@ -194,7 +182,7 @@ C {madvlsi/gnd.sym} 40 -220 0 1 {name=l11 lab=GND}
 C {madvlsi/vdd.sym} 40 -360 0 0 {name=l12 lab=VDD}
 C {devices/ipin.sym} -250 -420 3 0 {name=p36 lab=RST}
 C {devices/ipin.sym} -310 -410 3 0 {name=p37 lab=Ain}
-C {ENGR3426-MADVLSI/final_project/schematics/switch.sym} -310 -590 2 1 {}
+C {./switch.sym} -310 -590 2 1 {}
 C {devices/opin.sym} -310 -620 3 0 {name=p38 lab=Aout}
 C {devices/opin.sym} -310 -560 2 0 {name=p39 lab=COMPout_n}
 C {devices/opin.sym} -190 -560 0 0 {name=p40 lab=COMPout_p}
@@ -202,3 +190,15 @@ C {devices/ipin.sym} -340 -590 0 0 {name=p41 lab=ENAD_p}
 C {devices/ipin.sym} -280 -590 2 0 {name=p42 lab=ENAD_n}
 C {devices/ipin.sym} -170 -500 2 0 {name=p43 lab=ENAD_p}
 C {devices/ipin.sym} -330 -500 0 0 {name=p44 lab=ENAD_n}
+C {./switch.sym} -740 30 2 1 {}
+C {./switch.sym} -740 -120 2 1 {}
+C {./switch.sym} -380 -120 2 1 {}
+C {./switch.sym} -380 30 2 1 {}
+C {./switch.sym} -160 -30 2 1 {}
+C {./switch.sym} 0 0 2 1 {}
+C {./switch.sym} 160 -30 2 1 {}
+C {./switch.sym} 380 30 2 1 {}
+C {./switch.sym} 380 -120 2 1 {}
+C {./switch.sym} 740 -120 2 1 {}
+C {./switch.sym} 740 30 2 1 {}
+C {./switch.sym} 910 -30 2 1 {}
