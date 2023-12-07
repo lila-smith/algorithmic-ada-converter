@@ -75,7 +75,7 @@ C {devices/ipin.sym} 0 -30 1 0 {name=p3 lab=SH}
 C {devices/ipin.sym} 0 30 3 0 {name=p4 lab=SH_bar}
 C {devices/lab_pin.sym} 480 -90 0 0 {name=p9 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 640 -90 2 0 {name=p11 sig_type=std_logic lab=D}
-C {devices/ipin.sym} 460 -50 0 0 {name=p14 lab=Vb}
+C {devices/ipin.sym} 460 -70 0 0 {name=p14 lab=Vb}
 C {devices/ipin.sym} 660 -50 2 0 {name=p16 lab=Vcp}
 C {madvlsi/pmos3.sym} -40 -250 2 0 {name=M7
 L=L_U
@@ -171,7 +171,7 @@ value=C
 m=1}
 C {madvlsi/gnd.sym} -910 60 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} -660 -50 2 1 {name=p27 sig_type=std_logic lab=Vcp}
-C {devices/lab_pin.sym} -460 -50 0 1 {name=p28 sig_type=std_logic lab=Vb}
+C {devices/lab_pin.sym} -460 -70 0 1 {name=p28 sig_type=std_logic lab=Vb}
 C {madvlsi/gnd.sym} -40 -220 0 1 {name=l8 lab=GND}
 C {madvlsi/gnd.sym} 40 -220 0 1 {name=l11 lab=GND}
 C {madvlsi/vdd.sym} 40 -360 0 0 {name=l12 lab=VDD}
@@ -201,3 +201,5 @@ C {devices/ipin.sym} -190 -30 2 1 {name=p23 lab=PRE}
 C {devices/ipin.sym} -640 -90 2 1 {name=p24 lab=D_bar}
 C {devices/ipin.sym} -480 -90 0 1 {name=p25 lab=D}
 C {./switch.sym} -740 30 2 1 {}
+C {devices/lab_pin.sym} -460 -50 0 1 {name=p26 sig_type=std_logic lab=Vcn}
+C {devices/ipin.sym} 460 -50 0 0 {name=p42 lab=Vcn}
