@@ -5,7 +5,7 @@ K {}
 V {}
 S {type=subcircuit
 format="@name @pinlist @symname W_U=@W_U L_U=@L_U"
-template="name=x1 W_U=0.5 L_U=12"
+template="name=X1 W_U=0.5 L_U=12"
 
 }
 E {}
