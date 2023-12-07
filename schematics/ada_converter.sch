@@ -21,22 +21,16 @@ N -380 0 -380 60 {
 lab=#net5}
 N -500 0 -30 0 {
 lab=#net5}
-N -740 0 -740 60 {
-lab=#net6}
 N -500 -150 -380 -150 {
-lab=#net7}
-N -740 -150 -620 -150 {
-lab=#net8}
-N -740 -90 -740 -0 {
 lab=#net6}
+N -740 -150 -620 -150 {
+lab=#net7}
 N -380 -90 -380 -0 {
 lab=#net5}
-N -910 0 -620 0 {
-lab=#net6}
 N 620 -150 740 -150 {
-lab=#net9}
+lab=#net8}
 N 380 -150 500 -150 {
-lab=#net10}
+lab=#net9}
 N 740 -90 740 0 {
 lab=#net4}
 N 380 -90 380 -0 {
@@ -57,6 +51,12 @@ N -190 -410 130 -410 {
 lab=#net1}
 N 130 -410 130 -290 {
 lab=#net1}
+N -740 0 -740 60 {
+lab=#net10}
+N -740 -90 -740 0 {
+lab=#net10}
+N -910 0 -620 0 {
+lab=#net10}
 C {./ota.sym} -560 -10 0 0 {name=X1}
 C {devices/ipin.sym} 350 -120 0 0 {name=p5 lab=RCLp}
 C {devices/ipin.sym} 350 30 0 0 {name=p8 lab=STOp}
@@ -182,7 +182,6 @@ C {devices/opin.sym} -310 -560 2 0 {name=p39 lab=COMPout_bar}
 C {devices/opin.sym} -190 -560 0 0 {name=p40 lab=COMPout}
 C {devices/ipin.sym} -170 -500 2 0 {name=p43 lab=ENAD}
 C {devices/ipin.sym} -330 -500 0 0 {name=p44 lab=ENAD_bar}
-C {./switch.sym} -740 30 2 1 {}
 C {./switch.sym} -740 -120 2 1 {}
 C {./switch.sym} -380 -120 2 1 {}
 C {./switch.sym} -380 30 2 1 {}
@@ -201,3 +200,4 @@ C {devices/ipin.sym} -130 -30 0 1 {name=p41 lab=PRE_bar}
 C {devices/ipin.sym} -190 -30 2 1 {name=p23 lab=PRE}
 C {devices/ipin.sym} -640 -90 2 1 {name=p24 lab=D_bar}
 C {devices/ipin.sym} -480 -90 0 1 {name=p25 lab=D}
+C {./switch.sym} -740 30 2 1 {}
