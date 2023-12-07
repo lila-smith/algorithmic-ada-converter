@@ -15,12 +15,8 @@ N -120 -260 -80 -260 {
 lab=#net3}
 N 80 -260 120 -260 {
 lab=#net4}
-N -200 110 -90 110 {
-lab=#net5}
-N 90 110 200 110 {
-lab=#net2}
 N -170 170 170 170 {
-lab=#net6}
+lab=#net5}
 N 90 0 200 0 {
 lab=Vout_n}
 N -200 0 -90 0 {
@@ -38,9 +34,9 @@ lab=#net3}
 N -170 -290 -150 -290 {
 lab=#net3}
 N -170 60 170 60 {
-lab=#net7}
+lab=#net6}
 N -200 90 -200 140 {
-lab=#net5}
+lab=#net7}
 N -200 -200 -200 30 {
 lab=Vout_p}
 N 200 -200 200 30 {
@@ -53,10 +49,14 @@ N -80 -150 80 -260 {
 lab=#net4}
 N -80 -260 80 -150 {
 lab=#net3}
-N -60 30 -60 190 {
+N -60 140 -60 190 {
 lab=Vinv_p}
-N 60 30 60 190 {
-lab=D_p}
+N -90 0 -90 110 {
+lab=Vout_p}
+N 60 140 60 190 {
+lab=Vinv_n}
+N 90 0 90 110 {
+lab=Vout_n}
 C {devices/ipin.sym} -110 -120 0 0 {name=p5 lab=Vin_n}
 C {devices/ipin.sym} 110 -120 2 0 {name=p6 lab=Vin_p}
 C {devices/opin.sym} 200 0 0 0 {name=p7 lab=Vout_n}
@@ -256,37 +256,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} -90 30 0 1 {name=M31
-L=L_U
-W=W_U
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {madvlsi/nmos3.sym} 200 170 0 0 {name=M32
-L=L_U
-W=W_U
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 90 30 0 0 {name=M33
 L=L_U
 W=W_U
 body=GND
@@ -327,4 +297,4 @@ C {devices/ipin.sym} -230 -230 0 0 {name=p10 lab=Vcp}
 C {devices/ipin.sym} -30 -30 0 0 {name=p11 lab=Vb}
 C {devices/lab_pin.sym} 230 -230 2 0 {name=p12 sig_type=std_logic lab=Vcp}
 C {devices/ipin.sym} -60 190 1 1 {name=p13 lab=Vinv_p}
-C {devices/ipin.sym} 60 190 1 1 {name=p14 lab=D_p}
+C {devices/ipin.sym} 60 190 1 1 {name=p14 lab=Vinv_n}
