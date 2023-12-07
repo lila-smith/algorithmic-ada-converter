@@ -158,10 +158,6 @@ value=C
 m=1}
 C {madvlsi/gnd.sym} -160 60 0 0 {name=l6 lab=GND}
 C {madvlsi/vdd.sym} -160 -60 0 1 {name=l7 lab=VDD}
-C {devices/lab_pin.sym} -130 -30 0 1 {name=p23 sig_type=std_logic lab=PRE_n}
-C {devices/lab_pin.sym} -190 -30 2 1 {name=p24 sig_type=std_logic lab=PRE_p}
-C {devices/lab_pin.sym} -640 -90 2 1 {name=p25 sig_type=std_logic lab=D_n}
-C {devices/lab_pin.sym} -480 -90 0 1 {name=p26 sig_type=std_logic lab=D_p}
 C {devices/lab_pin.sym} -710 -120 0 1 {name=p29 sig_type=std_logic lab=STON_n}
 C {devices/lab_pin.sym} -770 -120 2 1 {name=p30 sig_type=std_logic lab=STON_p}
 C {devices/lab_pin.sym} -710 30 0 1 {name=p31 sig_type=std_logic lab=RCLN_n}
@@ -176,18 +172,14 @@ m=1}
 C {madvlsi/gnd.sym} -910 60 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} -660 -50 2 1 {name=p27 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} -460 -50 0 1 {name=p28 sig_type=std_logic lab=Vb}
-C {devices/lab_pin.sym} 0 -330 3 0 {name=p35 sig_type=std_logic lab=Vf}
 C {madvlsi/gnd.sym} -40 -220 0 1 {name=l8 lab=GND}
 C {madvlsi/gnd.sym} 40 -220 0 1 {name=l11 lab=GND}
 C {madvlsi/vdd.sym} 40 -360 0 0 {name=l12 lab=VDD}
 C {devices/ipin.sym} -250 -420 3 0 {name=p36 lab=RST}
 C {devices/ipin.sym} -310 -410 3 0 {name=p37 lab=Ain}
-C {./switch.sym} -310 -590 2 1 {}
-C {devices/opin.sym} -310 -620 3 0 {name=p38 lab=Aout}
+C {devices/opin.sym} -250 -530 3 0 {name=p38 lab=Aout}
 C {devices/opin.sym} -310 -560 2 0 {name=p39 lab=COMPout_n}
 C {devices/opin.sym} -190 -560 0 0 {name=p40 lab=COMPout_p}
-C {devices/ipin.sym} -340 -590 0 0 {name=p41 lab=ENAD_p}
-C {devices/ipin.sym} -280 -590 2 0 {name=p42 lab=ENAD_n}
 C {devices/ipin.sym} -170 -500 2 0 {name=p43 lab=ENAD_p}
 C {devices/ipin.sym} -330 -500 0 0 {name=p44 lab=ENAD_n}
 C {./switch.sym} -740 30 2 1 {}
@@ -202,3 +194,10 @@ C {./switch.sym} 380 -120 2 1 {}
 C {./switch.sym} 740 -120 2 1 {}
 C {./switch.sym} 740 30 2 1 {}
 C {./switch.sym} 910 -30 2 1 {}
+C {devices/ipin.sym} 0 -330 1 0 {name=p35 lab=Vf}
+C {devices/lab_pin.sym} -150 -460 0 1 {name=p45 sig_type=std_logic lab=Vb}
+C {devices/lab_pin.sym} -350 -460 2 1 {name=p46 sig_type=std_logic lab=Vcp}
+C {devices/ipin.sym} -130 -30 0 1 {name=p41 lab=PRE_n}
+C {devices/ipin.sym} -190 -30 2 1 {name=p23 lab=PRE_p}
+C {devices/ipin.sym} -640 -90 2 1 {name=p24 lab=D_n}
+C {devices/ipin.sym} -480 -90 0 1 {name=p25 lab=D_p}

@@ -327,4 +327,4 @@ C {devices/ipin.sym} -230 -230 0 0 {name=p10 lab=Vcp}
 C {devices/ipin.sym} -30 -30 0 0 {name=p11 lab=Vb}
 C {devices/lab_pin.sym} 230 -230 2 0 {name=p12 sig_type=std_logic lab=Vcp}
 C {devices/ipin.sym} -60 190 1 1 {name=p13 lab=Vinv_p}
-C {devices/ipin.sym} 60 190 1 1 {name=p14 lab=D_p}
+C {devices/ipin.sym} 60 190 1 1 {name=p14 lab=Vinv_n}
