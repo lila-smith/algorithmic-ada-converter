@@ -33,10 +33,8 @@ N -160 -290 -160 -260 {
 lab=#net3}
 N -170 -290 -150 -290 {
 lab=#net3}
-N -170 60 170 60 {
-lab=#net6}
 N -200 90 -200 140 {
-lab=#net7}
+lab=#net6}
 N -200 -200 -200 30 {
 lab=Vout_p}
 N 200 -200 200 30 {
@@ -196,7 +194,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} -200 60 0 1 {name=M27
+C {madvlsi/nmos3.sym} -200 60 0 0 {name=M27
 L=L_U
 W=W_U
 body=GND
@@ -211,7 +209,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 200 60 0 0 {name=M28
+C {madvlsi/nmos3.sym} 200 60 0 1 {name=M28
 L=L_U
 W=W_U
 body=GND
@@ -298,3 +296,5 @@ C {devices/ipin.sym} -30 -30 0 0 {name=p11 lab=Vb}
 C {devices/lab_pin.sym} 230 -230 2 0 {name=p12 sig_type=std_logic lab=Vcp}
 C {devices/ipin.sym} -60 190 1 1 {name=p13 lab=Vinv_p}
 C {devices/ipin.sym} 60 190 1 1 {name=p14 lab=Vinv_n}
+C {devices/lab_pin.sym} 230 60 2 0 {name=p1 sig_type=std_logic lab=Vcn}
+C {devices/ipin.sym} -230 60 0 0 {name=p2 lab=Vcn}
