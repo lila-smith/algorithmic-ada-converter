@@ -57,13 +57,13 @@ N 210 -220 240 -220 {
 lab=D}
 N 50 -100 200 -100 {
 lab=CLK}
-N 380 -900 420 -900 {
+N 340 -940 420 -940 {
 lab=CLK}
 N 580 -800 580 -700 {
 lab=PRE_bar}
 N 580 -800 750 -800 {
 lab=PRE_bar}
-N 490 -900 720 -900 {
+N 490 -940 720 -940 {
 lab=SH}
 N 300 -620 300 -590 {
 lab=CLK}
@@ -93,16 +93,13 @@ C {./inverter.sym} 70 -460 0 0 {name=X1}
 C {devices/ipin.sym} 40 -460 0 0 {name=p1 lab=D}
 C {devices/opin.sym} 190 -460 0 0 {name=p2 lab=D_bar}
 C {devices/opin.sym} 750 -800 0 0 {name=p4 lab=PRE_bar}
-C {devices/opin.sym} 720 -900 0 0 {name=p5 lab=SH}
+C {devices/opin.sym} 720 -940 0 0 {name=p5 lab=SH}
 C {./inverter.sym} 630 -700 0 0 {name=X2}
 C {madvlsi/vdd.sym} 670 -730 0 0 {name=l1 lab=VDD}
 C {madvlsi/vdd.sym} 110 -490 0 0 {name=l2 lab=VDD}
 C {madvlsi/gnd.sym} 670 -670 0 0 {name=l3 lab=GND}
 C {madvlsi/gnd.sym} 110 -430 0 0 {name=l4 lab=GND}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/CRSL_edge_sens.sym} 210 -120 0 0 {name=x3}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/CRSL_edge_sens.sym} 350 -120 0 0 {name=x4}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/CRSL_edge_sens.sym} 490 -120 0 0 {name=x5}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/CRSL_edge_sens.sym} 630 -120 0 0 {name=x6}
+C {./CRSL_edge_sens.sym} 350 -120 0 0 {name=x4}
 C {devices/opin.sym} 370 -300 3 0 {name=p6 lab=DOUT0}
 C {devices/opin.sym} 510 -300 3 0 {name=p7 lab=DOUT1}
 C {devices/opin.sym} 650 -300 3 0 {name=p8 lab=DOUT2}
@@ -115,14 +112,16 @@ C {devices/opin.sym} 750 -700 0 0 {name=p3 lab=PRE}
 C {devices/ipin.sym} 60 -750 0 0 {name=p12 lab=RST}
 C {madvlsi/vdd.sym} 500 -760 0 0 {name=l9 lab=VDD}
 C {madvlsi/gnd.sym} 500 -640 0 0 {name=l10 lab=GND}
-C {./inverter.sym} 410 -900 0 0 {name=X11}
-C {madvlsi/vdd.sym} 450 -930 0 0 {name=l11 lab=VDD}
-C {madvlsi/gnd.sym} 450 -870 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 80 -100 3 0 {name=p13 sig_type=std_logic lab=CLK}
-C {devices/lab_pin.sym} 380 -900 0 0 {name=p14 sig_type=std_logic lab=CLK}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/CRSL_edge_sens.sym} 210 -610 0 0 {name=x10}
+C {./inverter.sym} 410 -940 0 0 {name=X11}
+C {madvlsi/vdd.sym} 450 -970 0 0 {name=l11 lab=VDD}
+C {madvlsi/gnd.sym} 450 -910 0 0 {name=l12 lab=GND}
+C {devices/lab_pin.sym} 340 -940 0 0 {name=p14 sig_type=std_logic lab=CLK}
+C {./CRSL_edge_sens.sym} 210 -610 0 0 {name=x10}
 C {devices/lab_pin.sym} 300 -590 3 0 {name=p11 sig_type=std_logic lab=CLK}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/nand2.sym} 430 -630 0 0 {name=x8}
+C {./nand2.sym} 430 -630 0 0 {name=x8}
 C {./inverter.sym} 100 -690 0 0 {name=X13}
 C {madvlsi/vdd.sym} 140 -720 0 0 {name=l13 lab=VDD}
 C {madvlsi/gnd.sym} 140 -660 0 0 {name=l14 lab=GND}
+C {./CRSL_edge_sens.sym} 210 -120 0 0 {name=x3}
+C {./CRSL_edge_sens.sym} 490 -120 0 0 {name=x5}
+C {./CRSL_edge_sens.sym} 630 -120 0 0 {name=x6}
