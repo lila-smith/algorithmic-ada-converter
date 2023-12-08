@@ -60,79 +60,79 @@ lab=#net1}
 N 490 -180 490 -90 {
 lab=#net2}
 N 400 -350 420 -350 {
-lab=#net5}
+lab=xxx}
 N 400 -290 400 -210 {
 lab=#net1}
 N 420 -290 420 -210 {
 lab=#net2}
 N 450 -320 540 -320 {
-lab=#net6}
+lab=#net5}
 N 540 -480 540 -320 {
-lab=#net6}
+lab=#net5}
 N 270 -480 540 -480 {
-lab=#net6}
+lab=#net5}
 N 900 -90 900 -80 {
-lab=#net7}
+lab=#net6}
 N 840 -90 840 -60 {
-lab=#net7}
+lab=#net6}
 N 840 -40 840 -10 {
-lab=#net8}
+lab=#net7}
 N 900 -20 900 -10 {
-lab=#net8}
+lab=#net7}
 N 840 -10 900 -10 {
-lab=#net8}
+lab=#net7}
 N 1000 -90 1000 -80 {
-lab=#net7}
+lab=#net6}
 N 1000 -80 1000 -20 {
-lab=#net7}
+lab=#net6}
 N 420 -210 490 -90 {
 lab=#net2}
 N 330 -90 400 -210 {
 lab=#net1}
 N 1080 -180 1080 -90 {
-lab=#net7}
+lab=#net6}
 N -180 -90 -180 -80 {
-lab=#net9}
+lab=#net8}
 N -180 -80 -180 -20 {
-lab=#net9}
+lab=#net8}
 N -80 -90 -80 -80 {
-lab=#net9}
+lab=#net8}
 N -80 -20 -80 -10 {
-lab=#net10}
+lab=#net9}
 N -200 -90 -80 -90 {
-lab=#net9}
+lab=#net8}
 N -80 -90 -30 -90 {
-lab=#net9}
+lab=#net8}
 N -30 -90 -30 -60 {
-lab=#net9}
+lab=#net8}
 N -30 -60 -20 -60 {
-lab=#net9}
+lab=#net8}
 N -80 -10 -30 -10 {
-lab=#net10}
+lab=#net9}
 N -30 -40 -30 -10 {
-lab=#net10}
+lab=#net9}
 N -30 -42.5 -30 -40 {
-lab=#net10}
+lab=#net9}
 N -30 -42.5 -20 -42.5 {
-lab=#net10}
+lab=#net9}
 N -260 -180 -260 -90 {
-lab=#net9}
+lab=#net8}
 N -260 -90 -200 -90 {
-lab=#net9}
+lab=#net8}
 N 840 -90 900 -90 {
-lab=#net7}
+lab=#net6}
 N 900 -90 1000 -90 {
-lab=#net7}
+lab=#net6}
 N 1000 -90 1080 -90 {
-lab=#net7}
+lab=#net6}
 N -260 -90 -260 -20 {
-lab=#net9}
+lab=#net8}
 N 330 -90 330 -20 {
 lab=#net1}
 N 490 -90 490 -20 {
 lab=#net2}
 N 1080 -90 1080 -20 {
-lab=#net7}
+lab=#net6}
 C {./OTA_minus.sym} 0 30 0 0 {name=x1 W_U=12 L_U=0.5}
 C {./OTA_plus.sym} 700 30 0 0 {name=x2 W_U=0.5 L_U=12}
 C {./comp.sym} 235 -440 0 0 {name=x3 W_U=0.5 L_U=12}
@@ -606,3 +606,12 @@ C {madvlsi/gnd.sym} 490 40 0 0 {name=l5 lab=GND}
 C {madvlsi/gnd.sym} 330 40 0 0 {name=l6 lab=GND}
 C {madvlsi/gnd.sym} 1080 40 0 0 {name=l7 lab=GND}
 C {madvlsi/gnd.sym} -260 40 0 0 {name=l8 lab=GND}
+C {madvlsi/vsource.sym} -160 180 0 0 {name=V1
+value=1}
+C {madvlsi/vsource.sym} -90 180 0 0 {name=V2
+value=1}
+C {madvlsi/vsource.sym} -20 180 0 0 {name=V3
+value=1}
+C {madvlsi/vsource.sym} 50 180 0 0 {name=V4
+value=1}
+C {devices/lab_pin.sym} 410 -350 1 0 {name=p1 sig_type=std_logic lab=Vf}

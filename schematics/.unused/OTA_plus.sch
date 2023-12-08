@@ -28,15 +28,13 @@ lab=#net3}
 N 70 0 290 0 {
 lab=#net4}
 N 40 -250 40 -30 {
-lab=V_sto}
+lab=V_rc}
 N 320 -250 320 -30 {
 lab=V_sto}
 N 40 30 40 90 {
 lab=#net5}
-N 40 60 100 60 {
-lab=#net5}
 N 40 -60 100 -60 {
-lab=V_sto}
+lab=V_rc}
 N 70 120 100 120 {
 lab=#net6}
 N 100 120 290 120 {
@@ -45,14 +43,8 @@ N 320 30 320 90 {
 lab=#net7}
 N 260 -60 320 -60 {
 lab=V_sto}
-N 260 60 320 60 {
-lab=#net7}
 N 130 90 130 200 {
 lab=D_bar}
-N 130 -30 130 90 {
-lab=D_bar}
-N 230 -30 230 90 {
-lab=D}
 N 230 90 230 200 {
 lab=D}
 N 0 -80 150 -80 {
@@ -70,7 +62,9 @@ lab=Vc}
 N 320 -60 390 -60 {
 lab=V_sto}
 N -40 -60 40 -60 {
-lab=V_sto}
+lab=V_rc}
+N 260 -60 260 60 {}
+N 100 -60 100 60 {}
 C {madvlsi/pmos3.sym} 100 -340 0 0 {name=M1
 L=L_U
 W=W_U
@@ -266,37 +260,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 100 -30 0 1 {name=M14
-L=L_U
-W=W_U
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {madvlsi/nmos3.sym} 320 120 0 0 {name=M15
-L=L_U
-W=W_U
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 260 -30 0 0 {name=M16
 L=L_U
 W=W_U
 body=GND
