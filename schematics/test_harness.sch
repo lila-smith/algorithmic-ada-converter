@@ -61,8 +61,8 @@ C {madvlsi/vsource.sym} 520 -180 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} 520 -150 0 0 {name=l8 lab=GND}
 C {madvlsi/vdd.sym} 520 -210 0 0 {name=l9 lab=VDD}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/ada_converter.sym} 60 -180 0 0 {}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/bias_lds.sym} -290 -100 0 0 {name=x1}
+C {../schematics/ada_converter.sym} 60 -180 0 0 {}
+C {../schematics/bias_lds.sym} -290 -100 0 0 {name=x1}
 C {madvlsi/vsource.sym} 520 -60 0 0 {name=Vclk
 value=1}
 C {madvlsi/gnd.sym} 520 -30 0 0 {name=l3 lab=GND}
