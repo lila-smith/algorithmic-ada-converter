@@ -21,6 +21,7 @@ N 290 -420 580 -420 {
 lab=#net4}
 N 700 -420 1040 -420 {
 lab=#net1}
+C {../schematics/ota.sym} 640 -430 0 0 {name=X1}
 C {madvlsi/capacitor.sym} 1040 -390 0 0 {name=Cn
 value=1p
 m=1}
