@@ -282,5 +282,5 @@ C {devices/opin.sym} 590 -90 0 0 {name=p3 lab=Vcn}
 C {devices/opin.sym} 250 90 0 0 {name=p4 lab=Vbn}
 C {devices/opin.sym} 470 -250 0 0 {name=p5 lab=Vbp}
 C {madvlsi/isource.sym} -50 -90 0 0 {name=I1
-value=1u}
+value=100u}
 C {madvlsi/vdd.sym} -50 -120 0 0 {name=l10 lab=VDD}
