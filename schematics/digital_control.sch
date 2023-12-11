@@ -89,22 +89,18 @@ N 90 -690 110 -690 {
 lab=RST}
 N 90 -750 90 -690 {
 lab=RST}
-C {./inverter.sym} 70 -460 0 0 {name=X1}
 C {devices/ipin.sym} 40 -460 0 0 {name=p1 lab=D}
 C {devices/opin.sym} 190 -460 0 0 {name=p2 lab=D_bar}
 C {devices/opin.sym} 750 -800 0 0 {name=p4 lab=PRE_bar}
 C {devices/opin.sym} 720 -940 0 0 {name=p5 lab=SH}
-C {./inverter.sym} 630 -700 0 0 {name=X2}
 C {madvlsi/vdd.sym} 670 -730 0 0 {name=l1 lab=VDD}
 C {madvlsi/vdd.sym} 110 -490 0 0 {name=l2 lab=VDD}
 C {madvlsi/gnd.sym} 670 -670 0 0 {name=l3 lab=GND}
 C {madvlsi/gnd.sym} 110 -430 0 0 {name=l4 lab=GND}
-C {./CRSL_edge_sens.sym} 350 -120 0 0 {name=x4}
 C {devices/opin.sym} 370 -300 3 0 {name=p6 lab=DOUT0}
 C {devices/opin.sym} 510 -300 3 0 {name=p7 lab=DOUT1}
 C {devices/opin.sym} 650 -300 3 0 {name=p8 lab=DOUT2}
 C {devices/opin.sym} 800 -300 3 0 {name=p9 lab=DOUT3}
-C {./inverter.sym} 100 -200 0 0 {name=X7}
 C {madvlsi/gnd.sym} 140 -170 0 0 {name=l5 lab=GND}
 C {madvlsi/vdd.sym} 140 -230 0 0 {name=l6 lab=VDD}
 C {devices/ipin.sym} 50 -100 0 0 {name=p10 lab=CLK}
@@ -112,16 +108,20 @@ C {devices/opin.sym} 750 -700 0 0 {name=p3 lab=PRE}
 C {devices/ipin.sym} 60 -750 0 0 {name=p12 lab=RST}
 C {madvlsi/vdd.sym} 500 -760 0 0 {name=l9 lab=VDD}
 C {madvlsi/gnd.sym} 500 -640 0 0 {name=l10 lab=GND}
-C {./inverter.sym} 410 -940 0 0 {name=X11}
 C {madvlsi/vdd.sym} 450 -970 0 0 {name=l11 lab=VDD}
 C {madvlsi/gnd.sym} 450 -910 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 340 -940 0 0 {name=p14 sig_type=std_logic lab=CLK}
-C {./CRSL_edge_sens.sym} 210 -610 0 0 {name=x10}
+C {../schematics/CRSL_edge_sens.sym} 210 -610 0 0 {name=x10}
 C {devices/lab_pin.sym} 300 -590 3 0 {name=p11 sig_type=std_logic lab=CLK}
-C {./nand2.sym} 430 -630 0 0 {name=x8}
-C {./inverter.sym} 100 -690 0 0 {name=X13}
+C {../schematics/nand2.sym} 430 -630 0 0 {name=x8}
+C {../schematics/inverter.sym} 100 -690 0 0 {name=X13}
 C {madvlsi/vdd.sym} 140 -720 0 0 {name=l13 lab=VDD}
 C {madvlsi/gnd.sym} 140 -660 0 0 {name=l14 lab=GND}
-C {./CRSL_edge_sens.sym} 210 -120 0 0 {name=x3}
-C {./CRSL_edge_sens.sym} 490 -120 0 0 {name=x5}
-C {./CRSL_edge_sens.sym} 630 -120 0 0 {name=x6}
+C {../schematics/inverter.sym} 630 -700 0 0 {name=X2}
+C {../schematics/inverter.sym} 410 -940 0 0 {name=X9}
+C {../schematics/inverter.sym} 70 -460 0 0 {name=X1}
+C {../schematics/inverter.sym} 100 -200 0 0 {name=X7}
+C {../schematics/CRSL_edge_sens.sym} 210 -120 0 0 {name=x3}
+C {../schematics/CRSL_edge_sens.sym} 350 -120 0 0 {name=x4}
+C {../schematics/CRSL_edge_sens.sym} 490 -120 0 0 {name=x5}
+C {../schematics/CRSL_edge_sens.sym} 630 -120 0 0 {name=x6}
