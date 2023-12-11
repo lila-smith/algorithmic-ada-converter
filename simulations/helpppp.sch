@@ -21,7 +21,9 @@ N 290 -420 580 -420 {
 lab=#net4}
 N 700 -420 1040 -420 {
 lab=#net1}
-C {../schematics/ota.sym} 640 -430 0 0 {name=X1}
+C {../schematics/ota.sym} 640 -430 0 0 {name=X1
+W_U=12
+L_U=0.5}
 C {madvlsi/capacitor.sym} 1040 -390 0 0 {name=Cn
 value=1p
 m=1}
@@ -35,7 +37,6 @@ m=1}
 C {madvlsi/gnd.sym} 290 -360 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 540 -470 2 1 {name=p27 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 740 -490 0 1 {name=p28 sig_type=std_logic lab=Vb}
-C {../schematics/switch.sym} 820 -540 2 1 {}
 C {devices/ipin.sym} 1070 -450 0 1 {name=p41 lab=PRE_bar}
 C {devices/ipin.sym} 1010 -450 2 1 {name=p23 lab=PRE}
 C {devices/lab_pin.sym} 740 -470 0 1 {name=p26 sig_type=std_logic lab=Vcn}
@@ -51,11 +52,6 @@ C {devices/lab_pin.sym} 220 -220 3 1 {name=p1 sig_type=std_logic lab=PRE}
 C {../schematics/inverter.sym} 570 -190 0 0 {name=X2}
 C {devices/lab_pin.sym} 580 -190 2 1 {name=p2 sig_type=std_logic lab=PRE}
 C {devices/lab_pin.sym} 650 -190 0 1 {name=p3 sig_type=std_logic lab=PRE_bar}
-C {../schematics/switch.sym} 820 -390 2 1 {}
-C {../schematics/switch.sym} 1040 -450 2 1 {}
-C {../schematics/switch.sym} 460 -540 2 1 {}
-C {../schematics/switch.sym} 460 -390 2 1 {}
-C {../schematics/switch.sym} 290 -450 2 1 {}
 C {madvlsi/vdd.sym} 610 -220 0 1 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} 610 -160 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 560 -510 2 1 {name=p8 sig_type=std_logic lab=D_bar}
@@ -84,8 +80,15 @@ C {devices/lab_pin.sym} 790 -540 2 1 {name=p19 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 850 -540 0 1 {name=p6 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 790 -390 2 1 {name=p20 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 850 -390 0 1 {name=p15 sig_type=std_logic lab=D}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/bias.sym} 110 -610 0 0 {name=x6}
+C {../schematics/bias.sym} 110 -610 0 0 {name=x6}
 C {devices/lab_pin.sym} 260 -620 2 0 {name=p21 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 260 -600 0 1 {name=p22 sig_type=std_logic lab=Vcn}
 C {devices/lab_pin.sym} 260 -580 0 1 {name=p24 sig_type=std_logic lab=Vb}
-C {devices/code.sym} 950 -230 0 0 {name=SPICE only_toplevel=false value=".tran 0.01n 200n"}
+C {devices/code.sym} 950 -230 0 0 {name=SPICE only_toplevel=false value=".tran 0.01n 200n
+.save all"}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 290 -450 0 0 {name=X3 W_U=12 L_U=0.5}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 460 -390 0 0 {name=X4 W_U=12 L_U=0.5}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 460 -540 0 0 {name=X7 W_U=12 L_U=0.5}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 820 -540 0 0 {name=X8 W_U=12 L_U=0.5}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 1040 -450 0 0 {name=X9 W_U=12 L_U=0.5}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 820 -390 0 0 {name=X10 W_U=12 L_U=0.5}
