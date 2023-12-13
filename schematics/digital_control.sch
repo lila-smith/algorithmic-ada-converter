@@ -89,6 +89,14 @@ N 90 -690 110 -690 {
 lab=RST}
 N 90 -750 90 -690 {
 lab=RST}
+N 400 -600 400 -510 {
+lab=CLK}
+N 400 -510 440 -510 {
+lab=CLK}
+N 570 -500 620 -500 {
+lab=D_n}
+N 690 -500 740 -500 {
+lab=D_p}
 C {devices/ipin.sym} 40 -460 0 0 {name=p1 lab=D}
 C {devices/opin.sym} 190 -460 0 0 {name=p2 lab=D_bar}
 C {devices/opin.sym} 750 -800 0 0 {name=p4 lab=PRE_bar}
@@ -125,3 +133,12 @@ C {../schematics/CRSL_edge_sens.sym} 210 -120 0 0 {name=x3}
 C {../schematics/CRSL_edge_sens.sym} 350 -120 0 0 {name=x4}
 C {../schematics/CRSL_edge_sens.sym} 490 -120 0 0 {name=x5}
 C {../schematics/CRSL_edge_sens.sym} 630 -120 0 0 {name=x6}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/nand2.sym} 430 -430 0 0 {name=x11}
+C {madvlsi/vdd.sym} 500 -560 0 0 {name=l7 lab=VDD}
+C {madvlsi/gnd.sym} 500 -440 0 0 {name=l8 lab=GND}
+C {devices/lab_pin.sym} 440 -490 0 0 {name=p13 sig_type=std_logic lab=D}
+C {madvlsi/vdd.sym} 650 -530 0 0 {name=l15 lab=VDD}
+C {madvlsi/gnd.sym} 650 -470 0 0 {name=l16 lab=GND}
+C {../schematics/inverter.sym} 610 -500 0 0 {name=X12}
+C {devices/opin.sym} 600 -500 1 0 {name=p15 lab=D_n}
+C {devices/opin.sym} 740 -500 0 0 {name=p17 lab=D_p}

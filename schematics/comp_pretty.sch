@@ -388,10 +388,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} -100 540 0 0 {name=C1
-value=0.1p
+value=1p
 m=1}
 C {madvlsi/capacitor.sym} 100 540 0 0 {name=C2
-value=0.1p
+value=1p
 m=1}
 C {madvlsi/gnd.sym} -100 570 0 0 {name=l5 lab=GND}
 C {madvlsi/gnd.sym} 100 570 0 0 {name=l6 lab=GND}
