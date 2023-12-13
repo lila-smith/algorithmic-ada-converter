@@ -66,8 +66,16 @@ C {madvlsi/capacitor.sym} 160 30 0 1 {name=Cp
 value=5p
 m=1}
 C {madvlsi/gnd.sym} 160 60 0 1 {name=l1 lab=GND}
+<<<<<<< HEAD
 C {devices/lab_pin.sym} 480 -90 0 0 {name=p9 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 640 -90 2 0 {name=p11 sig_type=std_logic lab=D}
+=======
+C {devices/lab_pin.sym} 130 -30 0 0 {name=p2 sig_type=std_logic lab=PRE_bar}
+C {devices/lab_pin.sym} 190 -30 2 0 {name=p1 sig_type=std_logic lab=PRE}
+C {devices/lab_pin.sym} 480 -90 0 0 {name=p9 sig_type=std_logic lab=D_bar}
+C {devices/lab_pin.sym} 640 -90 2 0 {name=p11 sig_type=std_logic lab=D}
+C {devices/ipin.sym} 460 -70 0 0 {name=p14 lab=Vb}
+>>>>>>> 0a9ffded6dc85d4ba041044dc9cf7be0e722af93
 C {devices/ipin.sym} 660 -50 2 0 {name=p16 lab=Vcp}
 C {madvlsi/pmos3.sym} -40 -250 2 0 {name=M7
 L=L_U
@@ -142,7 +150,7 @@ C {madvlsi/capacitor.sym} -910 30 0 0 {name=Cnn
 value=5p
 m=1}
 C {madvlsi/gnd.sym} -910 60 0 0 {name=l10 lab=GND}
-C {devices/lab_pin.sym} -660 -50 2 1 {name=p27 sig_type=std_logic lab=Vcp}
+C {devices/lab_pin.sym} -460 -50 0 1 {name=p27 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} -460 -70 0 1 {name=p28 sig_type=std_logic lab=Vb}
 C {madvlsi/gnd.sym} -40 -220 0 1 {name=l8 lab=GND}
 C {madvlsi/gnd.sym} 40 -220 0 1 {name=l11 lab=GND}
@@ -157,6 +165,7 @@ C {devices/ipin.sym} 0 -330 1 0 {name=p35 lab=Vf}
 C {devices/lab_pin.sym} -150 -460 0 1 {name=p45 sig_type=std_logic lab=Vb}
 C {devices/lab_pin.sym} -350 -460 2 1 {name=p46 sig_type=std_logic lab=Vcp}
 C {devices/ipin.sym} -480 -90 0 1 {name=p25 lab=D}
+<<<<<<< HEAD
 C {devices/lab_pin.sym} -460 -50 0 1 {name=p26 sig_type=std_logic lab=Vcn}
 C {devices/ipin.sym} 460 -50 0 0 {name=p42 lab=Vcn}
 C {devices/lab_pin.sym} 780 -910 0 0 {name=p47 sig_type=std_logic lab=RST}
@@ -165,6 +174,18 @@ C {devices/lab_pin.sym} -640 -90 0 0 {name=p24 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 190 -30 2 0 {name=p41 sig_type=std_logic lab=RST_bar}
 C {devices/lab_pin.sym} -190 -30 0 0 {name=p23 sig_type=std_logic lab=RST}
 C {devices/lab_pin.sym} 1080 -910 2 0 {name=p52 sig_type=std_logic lab=SH}
+=======
+C {devices/lab_pin.sym} -660 -50 2 1 {name=p26 sig_type=std_logic lab=Vcn}
+C {devices/ipin.sym} 460 -50 0 0 {name=p42 lab=Vcn}
+C {devices/lab_pin.sym} 500 -790 0 0 {name=p47 sig_type=std_logic lab=RST}
+C {devices/lab_pin.sym} 500 -770 0 0 {name=p48 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} -640 -90 0 0 {name=p24 sig_type=std_logic lab=D_bar}
+C {devices/lab_pin.sym} -130 -30 2 0 {name=p41 sig_type=std_logic lab=PRE_bar}
+C {devices/lab_pin.sym} 800 -770 2 0 {name=p50 sig_type=std_logic lab=PRE_bar}
+C {devices/lab_pin.sym} 800 -750 2 0 {name=p51 sig_type=std_logic lab=PRE}
+C {devices/lab_pin.sym} -190 -30 0 0 {name=p23 sig_type=std_logic lab=PRE}
+C {devices/lab_pin.sym} 800 -790 2 0 {name=p52 sig_type=std_logic lab=SH}
+>>>>>>> 0a9ffded6dc85d4ba041044dc9cf7be0e722af93
 C {devices/lab_pin.sym} 0 -30 1 0 {name=p3 sig_type=std_logic lab=SH}
 C {devices/lab_pin.sym} 0 30 3 0 {name=p4 sig_type=std_logic lab=CLK}
 C {devices/ipin.sym} 780 -870 0 0 {name=p29 lab=CLK}
