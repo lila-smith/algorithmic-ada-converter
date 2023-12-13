@@ -66,7 +66,6 @@ C {madvlsi/capacitor.sym} 160 30 0 1 {name=Cp
 value=10p
 m=1}
 C {madvlsi/gnd.sym} 160 60 0 1 {name=l1 lab=GND}
-C {madvlsi/vdd.sym} 160 -60 0 0 {name=l2 lab=VDD}
 C {devices/lab_pin.sym} 130 -30 0 0 {name=p2 sig_type=std_logic lab=PRE_bar}
 C {devices/lab_pin.sym} 190 -30 2 0 {name=p1 sig_type=std_logic lab=PRE}
 C {devices/lab_pin.sym} 480 -90 0 0 {name=p9 sig_type=std_logic lab=D_bar}
@@ -134,7 +133,6 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/vdd.sym} -40 -360 0 0 {name=l3 lab=VDD}
-C {madvlsi/vdd.sym} 910 -60 0 0 {name=l4 lab=VDD}
 C {devices/lab_pin.sym} 880 -30 0 0 {name=p19 sig_type=std_logic lab=PRE_bar}
 C {devices/lab_pin.sym} 940 -30 2 0 {name=p20 sig_type=std_logic lab=PRE}
 C {madvlsi/capacitor.sym} 910 30 0 1 {name=Cpp
@@ -186,7 +184,7 @@ C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -380 -120 2 0 
 C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -740 30 0 0 {name=X8 W_U=12 L_U=0.5}
 C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -380 30 2 0 {name=X9 W_U=12 L_U=0.5}
 C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -160 -30 0 0 {name=X10 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 0 0 1 0 {name=X11 W_U=12 L_U=0.5}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 0 0 1 0 {name=X11 W_U=48 L_U=1}
 C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 160 -30 0 0 {name=X12 W_U=12 L_U=0.5}
 C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 380 -120 0 0 {name=X13 W_U=12 L_U=0.5}
 C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 380 30 0 0 {name=X14 W_U=12 L_U=0.5}
@@ -197,8 +195,6 @@ C {../schematics/inverter.sym} -500 -500 0 0 {name=X18}
 C {madvlsi/gnd.sym} -460 -470 0 0 {name=l13 lab=GND}
 C {madvlsi/vdd.sym} -460 -530 0 0 {name=l14 lab=VDD}
 C {devices/lab_pin.sym} -490 -500 0 0 {name=p44 sig_type=std_logic lab=ENAD}
-C {madvlsi/gnd.sym} -910 -60 2 0 {name=l9 lab=GND}
-C {madvlsi/gnd.sym} -160 -60 2 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 480 -520 2 0 {name=p55 sig_type=std_logic lab=D_n}
 C {devices/lab_pin.sym} 480 -500 2 0 {name=p56 sig_type=std_logic lab=D_p}
 C {devices/lab_pin.sym} 480 -480 2 0 {name=p57 sig_type=std_logic lab=D_bar}
@@ -218,3 +214,7 @@ C {devices/lab_pin.sym} 710 -120 0 0 {name=p12 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 770 -120 2 0 {name=p8 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 770 30 2 0 {name=p10 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 710 30 0 0 {name=p13 sig_type=std_logic lab=D_bar}
+C {devices/ipin.sym} 160 -60 1 0 {name=p53 lab=VREF_p}
+C {devices/ipin.sym} -160 -60 1 0 {name=p54 lab=VREF_n}
+C {devices/lab_pin.sym} 910 -60 1 0 {name=p58 sig_type=std_logic lab=VREF_p}
+C {devices/lab_pin.sym} -910 -60 1 0 {name=p59 sig_type=std_logic lab=VREF_n}
