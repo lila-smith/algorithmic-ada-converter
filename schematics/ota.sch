@@ -18,9 +18,9 @@ lab=#net4}
 N -170 170 170 170 {
 lab=#net5}
 N 90 0 200 0 {
-lab=Vout_n}
+lab=Vout_r}
 N -200 0 -90 0 {
-lab=Vout_p}
+lab=Vout_l}
 N 150 -290 170 -290 {
 lab=#net4}
 N 160 -290 160 -260 {
@@ -36,9 +36,9 @@ lab=#net3}
 N -200 90 -200 140 {
 lab=#net6}
 N -200 -200 -200 30 {
-lab=Vout_p}
+lab=Vout_l}
 N 200 -200 200 30 {
-lab=Vout_n}
+lab=Vout_r}
 N -80 -90 -80 -60 {
 lab=#net1}
 N 80 -90 80 -60 {
@@ -48,17 +48,15 @@ lab=#net4}
 N -80 -260 80 -150 {
 lab=#net3}
 N -60 140 -60 190 {
-lab=Vinv_p}
+lab=Vinv_l}
 N -90 0 -90 110 {
-lab=Vout_p}
+lab=Vout_l}
 N 60 140 60 190 {
-lab=Vinv_n}
+lab=Vinv_r}
 N 90 0 90 110 {
-lab=Vout_n}
-C {devices/ipin.sym} -110 -120 0 0 {name=p5 lab=Vin_n}
-C {devices/ipin.sym} 110 -120 2 0 {name=p6 lab=Vin_p}
-C {devices/opin.sym} 200 0 0 0 {name=p7 lab=Vout_n}
-C {devices/opin.sym} -200 0 2 0 {name=p8 lab=Vout_p}
+lab=Vout_r}
+C {devices/ipin.sym} -110 -120 0 0 {name=p5 lab=Vin_l}
+C {devices/ipin.sym} 110 -120 2 0 {name=p6 lab=Vin_r}
 C {madvlsi/pmos3.sym} -120 -290 0 0 {name=M18
 L=L_U
 W=W_U
@@ -294,7 +292,9 @@ C {madvlsi/gnd.sym} 0 0 0 0 {name=l14 lab=GND}
 C {devices/ipin.sym} -230 -230 0 0 {name=p10 lab=Vcp}
 C {devices/ipin.sym} -30 -30 0 0 {name=p11 lab=Vb}
 C {devices/lab_pin.sym} 230 -230 2 0 {name=p12 sig_type=std_logic lab=Vcp}
-C {devices/ipin.sym} -60 190 1 1 {name=p13 lab=Vinv_p}
-C {devices/ipin.sym} 60 190 1 1 {name=p14 lab=Vinv_n}
+C {devices/ipin.sym} -60 190 1 1 {name=p13 lab=Vinv_l}
+C {devices/ipin.sym} 60 190 1 1 {name=p14 lab=Vinv_r}
 C {devices/lab_pin.sym} 230 60 2 0 {name=p1 sig_type=std_logic lab=Vcn}
 C {devices/ipin.sym} -230 60 0 0 {name=p2 lab=Vcn}
+C {devices/opin.sym} 200 0 0 0 {name=p3 lab=Vout_r}
+C {devices/opin.sym} -200 0 2 0 {name=p4 lab=Vout_l}

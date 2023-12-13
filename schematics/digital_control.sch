@@ -5,140 +5,145 @@ K {}
 V {}
 S {}
 E {}
-N 40 -460 80 -460 {
+N 130 -460 170 -460 {
 lab=D}
-N 150 -460 190 -460 {
+N 240 -460 280 -460 {
 lab=D_bar}
-N 710 -700 750 -700 {
+N 710 -800 750 -800 {
 lab=PRE}
-N 360 -200 380 -200 {
+N 450 -200 470 -200 {
 lab=#net1}
-N 360 -220 380 -220 {
+N 450 -220 470 -220 {
 lab=DOUT0}
-N 500 -200 520 -200 {
+N 590 -200 610 -200 {
 lab=#net2}
-N 500 -220 520 -220 {
+N 590 -220 610 -220 {
 lab=DOUT1}
-N 640 -200 660 -200 {
+N 730 -200 750 -200 {
 lab=#net3}
-N 640 -220 660 -220 {
+N 730 -220 750 -220 {
 lab=DOUT2}
-N 200 -100 720 -100 {
+N 290 -100 810 -100 {
 lab=CLK}
-N 720 -130 720 -100 {
+N 810 -130 810 -100 {
 lab=CLK}
-N 580 -130 580 -100 {
+N 670 -130 670 -100 {
 lab=CLK}
-N 440 -130 440 -100 {
+N 530 -130 530 -100 {
 lab=CLK}
-N 300 -130 300 -100 {
+N 390 -130 390 -100 {
 lab=CLK}
-N 370 -300 370 -220 {
+N 460 -300 460 -220 {
 lab=DOUT0}
-N 510 -300 510 -220 {
+N 600 -300 600 -220 {
 lab=DOUT1}
-N 650 -300 650 -220 {
+N 740 -300 740 -220 {
 lab=DOUT2}
-N 800 -300 800 -220 {
+N 890 -300 890 -220 {
 lab=DOUT3}
-N 780 -220 800 -220 {
+N 870 -220 890 -220 {
 lab=DOUT3}
-N 180 -200 240 -200 {
+N 270 -200 330 -200 {
 lab=#net4}
-N 60 -460 60 -200 {
+N 150 -460 150 -200 {
 lab=D}
-N 60 -200 110 -200 {
+N 150 -200 200 -200 {
 lab=D}
-N 60 -280 210 -280 {
+N 150 -280 300 -280 {
 lab=D}
-N 210 -280 210 -220 {
+N 300 -280 300 -220 {
 lab=D}
-N 210 -220 240 -220 {
+N 300 -220 330 -220 {
 lab=D}
-N 50 -100 200 -100 {
+N 140 -100 290 -100 {
 lab=CLK}
 N 340 -940 420 -940 {
 lab=CLK}
-N 580 -800 580 -700 {
+N 580 -900 580 -800 {
 lab=PRE_bar}
-N 580 -800 750 -800 {
+N 580 -900 750 -900 {
 lab=PRE_bar}
 N 490 -940 720 -940 {
 lab=SH}
-N 300 -620 300 -590 {
-lab=CLK}
-N 360 -710 440 -710 {
-lab=#net5}
-N 300 -600 400 -600 {
-lab=CLK}
-N 400 -690 400 -600 {
-lab=CLK}
-N 400 -690 440 -690 {
-lab=CLK}
-N 570 -700 640 -700 {
+N 360 -810 440 -810 {
+lab=RST}
+N 570 -800 640 -800 {
 lab=PRE_bar}
-N 180 -690 240 -690 {
-lab=#net6}
-N 60 -750 200 -750 {
+N 60 -850 200 -850 {
 lab=RST}
-N 200 -750 200 -710 {
+N 200 -850 200 -810 {
 lab=RST}
-N 200 -710 240 -710 {
+N 200 -810 240 -810 {
 lab=RST}
-N 90 -690 110 -690 {
-lab=RST}
-N 90 -750 90 -690 {
-lab=RST}
-N 400 -600 400 -510 {
-lab=CLK}
-N 400 -510 440 -510 {
-lab=CLK}
-N 570 -500 620 -500 {
-lab=D_n}
-N 690 -500 740 -500 {
+N 750 -560 800 -560 {
+lab=#net5}
+N 870 -560 920 -560 {
 lab=D_p}
-C {devices/ipin.sym} 40 -460 0 0 {name=p1 lab=D}
-C {devices/opin.sym} 190 -460 0 0 {name=p2 lab=D_bar}
-C {devices/opin.sym} 750 -800 0 0 {name=p4 lab=PRE_bar}
+N 490 -570 620 -570 {
+lab=CLK}
+N 640 -430 690 -430 {
+lab=#net6}
+N 760 -430 810 -430 {
+lab=D_n}
+N 490 -570 490 -440 {
+lab=CLK}
+N 490 -440 510 -440 {
+lab=CLK}
+N 280 -460 280 -420 {
+lab=D_bar}
+N 280 -420 510 -420 {
+lab=D_bar}
+N 240 -810 360 -810 {
+lab=RST}
+N 300 -780 440 -780 {
+lab=CLK}
+N 440 -790 440 -780 {
+lab=CLK}
+C {devices/ipin.sym} 130 -460 0 0 {name=p1 lab=D}
+C {devices/opin.sym} 280 -460 3 0 {name=p2 lab=D_bar}
+C {devices/opin.sym} 750 -900 0 0 {name=p4 lab=PRE_bar}
 C {devices/opin.sym} 720 -940 0 0 {name=p5 lab=SH}
-C {madvlsi/vdd.sym} 670 -730 0 0 {name=l1 lab=VDD}
-C {madvlsi/vdd.sym} 110 -490 0 0 {name=l2 lab=VDD}
-C {madvlsi/gnd.sym} 670 -670 0 0 {name=l3 lab=GND}
-C {madvlsi/gnd.sym} 110 -430 0 0 {name=l4 lab=GND}
-C {devices/opin.sym} 370 -300 3 0 {name=p6 lab=DOUT0}
-C {devices/opin.sym} 510 -300 3 0 {name=p7 lab=DOUT1}
-C {devices/opin.sym} 650 -300 3 0 {name=p8 lab=DOUT2}
-C {devices/opin.sym} 800 -300 3 0 {name=p9 lab=DOUT3}
-C {madvlsi/gnd.sym} 140 -170 0 0 {name=l5 lab=GND}
-C {madvlsi/vdd.sym} 140 -230 0 0 {name=l6 lab=VDD}
-C {devices/ipin.sym} 50 -100 0 0 {name=p10 lab=CLK}
-C {devices/opin.sym} 750 -700 0 0 {name=p3 lab=PRE}
-C {devices/ipin.sym} 60 -750 0 0 {name=p12 lab=RST}
-C {madvlsi/vdd.sym} 500 -760 0 0 {name=l9 lab=VDD}
-C {madvlsi/gnd.sym} 500 -640 0 0 {name=l10 lab=GND}
+C {madvlsi/vdd.sym} 670 -830 0 0 {name=l1 lab=VDD}
+C {madvlsi/vdd.sym} 200 -490 0 0 {name=l2 lab=VDD}
+C {madvlsi/gnd.sym} 670 -770 0 0 {name=l3 lab=GND}
+C {madvlsi/gnd.sym} 200 -430 0 0 {name=l4 lab=GND}
+C {devices/opin.sym} 460 -300 3 0 {name=p6 lab=DOUT0}
+C {devices/opin.sym} 600 -300 3 0 {name=p7 lab=DOUT1}
+C {devices/opin.sym} 740 -300 3 0 {name=p8 lab=DOUT2}
+C {devices/opin.sym} 890 -300 3 0 {name=p9 lab=DOUT3}
+C {madvlsi/gnd.sym} 230 -170 0 0 {name=l5 lab=GND}
+C {madvlsi/vdd.sym} 230 -230 0 0 {name=l6 lab=VDD}
+C {devices/ipin.sym} 140 -100 0 0 {name=p10 lab=CLK}
+C {devices/opin.sym} 750 -800 0 0 {name=p3 lab=PRE}
+C {devices/ipin.sym} 60 -850 0 0 {name=p12 lab=RST}
 C {madvlsi/vdd.sym} 450 -970 0 0 {name=l11 lab=VDD}
 C {madvlsi/gnd.sym} 450 -910 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 340 -940 0 0 {name=p14 sig_type=std_logic lab=CLK}
-C {../schematics/CRSL_edge_sens.sym} 210 -610 0 0 {name=x10}
-C {devices/lab_pin.sym} 300 -590 3 0 {name=p11 sig_type=std_logic lab=CLK}
-C {../schematics/nand2.sym} 430 -630 0 0 {name=x8}
-C {../schematics/inverter.sym} 100 -690 0 0 {name=X13}
-C {madvlsi/vdd.sym} 140 -720 0 0 {name=l13 lab=VDD}
-C {madvlsi/gnd.sym} 140 -660 0 0 {name=l14 lab=GND}
-C {../schematics/inverter.sym} 630 -700 0 0 {name=X2}
+C {devices/lab_pin.sym} 300 -780 0 0 {name=p11 sig_type=std_logic lab=CLK}
+C {../schematics/inverter.sym} 630 -800 0 0 {name=X2}
 C {../schematics/inverter.sym} 410 -940 0 0 {name=X9}
-C {../schematics/inverter.sym} 70 -460 0 0 {name=X1}
-C {../schematics/inverter.sym} 100 -200 0 0 {name=X7}
-C {../schematics/CRSL_edge_sens.sym} 210 -120 0 0 {name=x3}
-C {../schematics/CRSL_edge_sens.sym} 350 -120 0 0 {name=x4}
-C {../schematics/CRSL_edge_sens.sym} 490 -120 0 0 {name=x5}
-C {../schematics/CRSL_edge_sens.sym} 630 -120 0 0 {name=x6}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/nand2.sym} 430 -430 0 0 {name=x11}
-C {madvlsi/vdd.sym} 500 -560 0 0 {name=l7 lab=VDD}
-C {madvlsi/gnd.sym} 500 -440 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} 440 -490 0 0 {name=p13 sig_type=std_logic lab=D}
-C {madvlsi/vdd.sym} 650 -530 0 0 {name=l15 lab=VDD}
-C {madvlsi/gnd.sym} 650 -470 0 0 {name=l16 lab=GND}
-C {../schematics/inverter.sym} 610 -500 0 0 {name=X12}
-C {devices/opin.sym} 600 -500 1 0 {name=p15 lab=D_n}
-C {devices/opin.sym} 740 -500 0 0 {name=p17 lab=D_p}
+C {../schematics/inverter.sym} 160 -460 0 0 {name=X1}
+C {../schematics/inverter.sym} 190 -200 0 0 {name=X7}
+C {../schematics/CRSL_edge_sens.sym} 300 -120 0 0 {name=x3}
+C {../schematics/CRSL_edge_sens.sym} 440 -120 0 0 {name=x4}
+C {../schematics/CRSL_edge_sens.sym} 580 -120 0 0 {name=x5}
+C {../schematics/CRSL_edge_sens.sym} 720 -120 0 0 {name=x6}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/nand2.sym} 610 -490 0 0 {name=x11}
+C {madvlsi/vdd.sym} 680 -620 0 0 {name=l7 lab=VDD}
+C {madvlsi/gnd.sym} 680 -500 0 0 {name=l8 lab=GND}
+C {devices/lab_pin.sym} 620 -550 0 0 {name=p13 sig_type=std_logic lab=D}
+C {madvlsi/vdd.sym} 830 -590 0 0 {name=l15 lab=VDD}
+C {madvlsi/gnd.sym} 830 -530 0 0 {name=l16 lab=GND}
+C {../schematics/inverter.sym} 790 -560 0 0 {name=X12}
+C {devices/opin.sym} 920 -560 0 0 {name=p17 lab=D_p}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/nand2.sym} 500 -360 0 0 {name=x14}
+C {madvlsi/vdd.sym} 570 -490 0 0 {name=l17 lab=VDD}
+C {madvlsi/gnd.sym} 570 -370 0 0 {name=l18 lab=GND}
+C {madvlsi/vdd.sym} 720 -460 0 0 {name=l19 lab=VDD}
+C {madvlsi/gnd.sym} 720 -400 0 0 {name=l20 lab=GND}
+C {../schematics/inverter.sym} 680 -430 0 0 {name=X15}
+C {devices/opin.sym} 810 -430 0 0 {name=p15 lab=D_n}
+C {/home/madvlsi/algorithmic-ada-converter/schematics/nand2.sym} 430 -730 0 0 {name=x8}
+C {madvlsi/vdd.sym} 500 -860 0 0 {name=l9 lab=VDD}
+C {madvlsi/gnd.sym} 500 -740 0 0 {name=l10 lab=GND}
+C {devices/lab_pin.sym} 490 -570 0 0 {name=p16 sig_type=std_logic lab=CLK}

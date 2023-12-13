@@ -413,7 +413,7 @@ C {devices/ipin.sym} 110 -60 2 0 {name=p10 lab=Ui}
 C {devices/lab_pin.sym} 270 -170 2 0 {name=p12 sig_type=std_logic lab=Vcp}
 C {devices/ipin.sym} 130 300 2 0 {name=p11 lab=ENAD_p}
 C {devices/lab_pin.sym} -20 120 2 0 {name=p13 sig_type=std_logic lab=ENAD_n}
-C {madvlsi/pmos3.sym} -390 80 3 0 {name=M26
+C {madvlsi/pmos3.sym} -390 -80 1 0 {name=M26
 L=L_U
 W=W_U
 body=VDD
@@ -428,7 +428,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} -390 -80 3 1 {name=M27
+C {devices/lab_pin.sym} -390 -110 1 0 {name=p14 sig_type=std_logic lab=ENAD_p}
+C {devices/lab_pin.sym} -390 110 3 0 {name=p7 sig_type=std_logic lab=ENAD_n}
+C {madvlsi/nmos3.sym} -390 80 3 0 {name=M21
 L=L_U
 W=W_U
 body=GND
@@ -443,5 +445,3 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} -390 -110 1 0 {name=p14 sig_type=std_logic lab=ENAD_p}
-C {devices/lab_pin.sym} -390 110 3 0 {name=p7 sig_type=std_logic lab=ENAD_n}
