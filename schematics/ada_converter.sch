@@ -63,7 +63,7 @@ C {../schematics/ota.sym} -560 -10 0 0 {name=X1}
 C {./ota.sym} 560 -10 0 1 {name=X2}
 C {../schematics/comp_pretty.sym} -250 -420 0 0 {name=X3}
 C {madvlsi/capacitor.sym} 160 30 0 1 {name=Cp
-value=10p
+value=5p
 m=1}
 C {madvlsi/gnd.sym} 160 60 0 1 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 130 -30 0 0 {name=p2 sig_type=std_logic lab=PRE_bar}
@@ -136,17 +136,17 @@ C {madvlsi/vdd.sym} -40 -360 0 0 {name=l3 lab=VDD}
 C {devices/lab_pin.sym} 880 -30 0 0 {name=p19 sig_type=std_logic lab=PRE_bar}
 C {devices/lab_pin.sym} 940 -30 2 0 {name=p20 sig_type=std_logic lab=PRE}
 C {madvlsi/capacitor.sym} 910 30 0 1 {name=Cpp
-value=10p
+value=5p
 m=1}
 C {madvlsi/gnd.sym} 910 60 0 1 {name=l5 lab=GND}
 C {madvlsi/capacitor.sym} -160 30 0 0 {name=Cn
-value=10p
+value=5p
 m=1}
 C {madvlsi/gnd.sym} -160 60 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} -880 -30 0 1 {name=p33 sig_type=std_logic lab=PRE_bar}
 C {devices/lab_pin.sym} -940 -30 2 1 {name=p34 sig_type=std_logic lab=PRE}
 C {madvlsi/capacitor.sym} -910 30 0 0 {name=Cnn
-value=10p
+value=5p
 m=1}
 C {madvlsi/gnd.sym} -910 60 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} -660 -50 2 1 {name=p27 sig_type=std_logic lab=Vcp}
@@ -178,19 +178,19 @@ C {devices/lab_pin.sym} 0 -30 1 0 {name=p3 sig_type=std_logic lab=SH}
 C {devices/lab_pin.sym} 0 30 3 0 {name=p4 sig_type=std_logic lab=CLK}
 C {devices/ipin.sym} 180 -540 0 0 {name=p29 lab=CLK}
 C {../schematics/digital_control.sym} 330 -490 0 0 {name=x4}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -910 -30 0 0 {name=X5 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -740 -120 0 0 {name=X6 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -380 -120 2 0 {name=X7 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -740 30 0 0 {name=X8 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -380 30 2 0 {name=X9 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -160 -30 0 0 {name=X10 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 0 0 1 0 {name=X11 W_U=48 L_U=1}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 160 -30 0 0 {name=X12 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 380 -120 0 0 {name=X13 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 380 30 0 0 {name=X14 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 740 30 2 0 {name=X15 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 740 -120 2 0 {name=X16 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 910 -30 0 0 {name=X17 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -910 -30 0 0 {name=X5 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -740 -120 0 0 {name=X6 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -380 -120 2 0 {name=X7 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -740 30 0 0 {name=X8 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -380 30 2 0 {name=X9 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -160 -30 0 0 {name=X10 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 0 0 1 0 {name=X11 W_U=48 L_U=0.5}
+C {../schematics/switch.sym} 160 -30 0 0 {name=X12 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 380 -120 0 0 {name=X13 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 380 30 0 0 {name=X14 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 740 30 2 0 {name=X15 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 740 -120 2 0 {name=X16 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 910 -30 0 0 {name=X17 W_U=12 L_U=0.5}
 C {../schematics/inverter.sym} -500 -500 0 0 {name=X18}
 C {madvlsi/gnd.sym} -460 -470 0 0 {name=l13 lab=GND}
 C {madvlsi/vdd.sym} -460 -530 0 0 {name=l14 lab=VDD}
