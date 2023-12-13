@@ -60,7 +60,7 @@ lab=#net10}
 N -420 -500 -330 -500 {
 lab=#net11}
 C {../schematics/ota.sym} -560 -10 0 0 {name=X1}
-C {./ota.sym} 560 -10 0 1 {name=X2}
+C {../schematics/ota.sym} 560 -10 0 1 {name=X2}
 C {../schematics/comp_pretty.sym} -250 -420 0 0 {name=X3}
 C {madvlsi/capacitor.sym} 160 30 0 1 {name=Cp
 value=5p
@@ -68,8 +68,8 @@ m=1}
 C {madvlsi/gnd.sym} 160 60 0 1 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 130 -30 0 0 {name=p2 sig_type=std_logic lab=PRE_bar}
 C {devices/lab_pin.sym} 190 -30 2 0 {name=p1 sig_type=std_logic lab=PRE}
-C {devices/lab_pin.sym} 480 -90 0 0 {name=p9 sig_type=std_logic lab=D_bar}
-C {devices/lab_pin.sym} 640 -90 2 0 {name=p11 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 640 -90 2 0 {name=p9 sig_type=std_logic lab=D_bar}
+C {devices/lab_pin.sym} 480 -90 0 0 {name=p11 sig_type=std_logic lab=D}
 C {devices/ipin.sym} 460 -70 0 0 {name=p14 lab=Vb}
 C {devices/ipin.sym} 660 -50 2 0 {name=p16 lab=Vcp}
 C {madvlsi/pmos3.sym} -40 -250 2 0 {name=M7
@@ -163,21 +163,21 @@ C {devices/ipin.sym} -170 -500 2 0 {name=p43 lab=ENAD}
 C {devices/ipin.sym} 0 -330 1 0 {name=p35 lab=Vf}
 C {devices/lab_pin.sym} -150 -460 0 1 {name=p45 sig_type=std_logic lab=Vb}
 C {devices/lab_pin.sym} -350 -460 2 1 {name=p46 sig_type=std_logic lab=Vcp}
-C {devices/ipin.sym} -480 -90 0 1 {name=p25 lab=D}
+C {devices/ipin.sym} -640 -90 2 1 {name=p25 lab=D}
 C {devices/lab_pin.sym} -460 -50 0 1 {name=p26 sig_type=std_logic lab=Vcn}
 C {devices/ipin.sym} 460 -50 0 0 {name=p42 lab=Vcn}
-C {devices/lab_pin.sym} 180 -580 0 0 {name=p47 sig_type=std_logic lab=RST}
-C {devices/lab_pin.sym} 180 -560 0 0 {name=p48 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} -640 -90 0 0 {name=p24 sig_type=std_logic lab=D_bar}
+C {devices/lab_pin.sym} 500 -790 0 0 {name=p47 sig_type=std_logic lab=RST}
+C {devices/lab_pin.sym} 500 -770 0 0 {name=p48 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} -480 -90 2 0 {name=p24 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} -130 -30 2 0 {name=p41 sig_type=std_logic lab=PRE_bar}
-C {devices/lab_pin.sym} 480 -560 2 0 {name=p50 sig_type=std_logic lab=PRE_bar}
-C {devices/lab_pin.sym} 480 -540 2 0 {name=p51 sig_type=std_logic lab=PRE}
+C {devices/lab_pin.sym} 800 -770 2 0 {name=p50 sig_type=std_logic lab=PRE_bar}
+C {devices/lab_pin.sym} 800 -750 2 0 {name=p51 sig_type=std_logic lab=PRE}
 C {devices/lab_pin.sym} -190 -30 0 0 {name=p23 sig_type=std_logic lab=PRE}
-C {devices/lab_pin.sym} 480 -580 2 0 {name=p52 sig_type=std_logic lab=SH}
+C {devices/lab_pin.sym} 800 -790 2 0 {name=p52 sig_type=std_logic lab=SH}
 C {devices/lab_pin.sym} 0 -30 1 0 {name=p3 sig_type=std_logic lab=SH}
 C {devices/lab_pin.sym} 0 30 3 0 {name=p4 sig_type=std_logic lab=CLK}
-C {devices/ipin.sym} 180 -540 0 0 {name=p29 lab=CLK}
-C {../schematics/digital_control.sym} 330 -490 0 0 {name=x4}
+C {devices/ipin.sym} 500 -750 0 0 {name=p29 lab=CLK}
+C {../schematics/digital_control.sym} 650 -700 0 0 {name=x4}
 C {../schematics/switch.sym} -910 -30 0 0 {name=X5 W_U=12 L_U=0.5}
 C {../schematics/switch.sym} -740 -120 0 0 {name=X6 W_U=12 L_U=0.5}
 C {../schematics/switch.sym} -380 -120 2 0 {name=X7 W_U=12 L_U=0.5}
@@ -195,9 +195,9 @@ C {../schematics/inverter.sym} -500 -500 0 0 {name=X18}
 C {madvlsi/gnd.sym} -460 -470 0 0 {name=l13 lab=GND}
 C {madvlsi/vdd.sym} -460 -530 0 0 {name=l14 lab=VDD}
 C {devices/lab_pin.sym} -490 -500 0 0 {name=p44 sig_type=std_logic lab=ENAD}
-C {devices/lab_pin.sym} 480 -520 2 0 {name=p55 sig_type=std_logic lab=D_n}
-C {devices/lab_pin.sym} 480 -500 2 0 {name=p56 sig_type=std_logic lab=D_p}
-C {devices/lab_pin.sym} 480 -480 2 0 {name=p57 sig_type=std_logic lab=D_bar}
+C {devices/lab_pin.sym} 800 -730 2 0 {name=p55 sig_type=std_logic lab=D_n}
+C {devices/lab_pin.sym} 800 -710 2 0 {name=p56 sig_type=std_logic lab=D_p}
+C {devices/lab_pin.sym} 800 -690 2 0 {name=p57 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} -770 -120 0 0 {name=p15 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} -710 -120 2 0 {name=p22 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} -770 30 0 0 {name=p31 sig_type=std_logic lab=D_bar}

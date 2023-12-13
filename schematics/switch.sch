@@ -6,7 +6,7 @@ V {}
 S {}
 E {}
 N -70 30 70 30 {
-lab=xxx}
+lab=Vout}
 N -70 -30 70 -30 {
 lab=Vin}
 C {madvlsi/pmos3.sym} 70 0 2 0 {name=M24
@@ -14,7 +14,7 @@ L=L_U
 W=W_U
 body=VDD
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

@@ -7,26 +7,8 @@ S {}
 E {}
 N -140 -110 -0 -110 {
 lab=#net1}
-N -70 -90 -0 -90 {
-lab=#net2}
-N -140 -90 -80 -90 {
-lab=#net3}
-N -60 -70 -0 -70 {
-lab=#net3}
-N -70 -90 -70 -80 {
-lab=#net2}
-N -100 -80 -70 -80 {
-lab=#net2}
-N -100 -80 -100 -70 {
-lab=#net2}
-N -140 -70 -100 -70 {
-lab=#net2}
-N -80 -90 -80 -70 {
-lab=#net3}
-N -80 -70 -60 -70 {
-lab=#net3}
 N 0 140 50 140 {
-lab=#net4}
+lab=#net2}
 N -70 70 -70 140 {
 lab=D}
 N -70 70 20 70 {
@@ -36,6 +18,10 @@ lab=D}
 N 20 120 50 120 {
 lab=D}
 N 10 -210 10 -150 {
+lab=#net3}
+N -140 -90 -0 -90 {
+lab=#net4}
+N -140 -70 -0 -70 {
 lab=#net5}
 C {madvlsi/tt_models.sym} 270 -370 0 0 {
 name=TT_MODELS
@@ -49,7 +35,7 @@ value="pwl(0 0 7us 0 8us 1.8 17us 1.8 18us 0)"}
 C {madvlsi/vsource.sym} 320 -180 0 0 {name=V3
 value=0.9}
 C {madvlsi/vsource.sym} 250 -60 0 0 {name=Vena
-value=1.8}
+value=0}
 C {madvlsi/vsource.sym} 390 -180 0 0 {name=Vrst
 value="pwl(0n 1.8 4u 1.8 5u 0)"}
 C {madvlsi/gnd.sym} 250 -30 0 0 {name=l1 lab=GND}
@@ -62,18 +48,17 @@ C {devices/lab_pin.sym} 320 -210 0 0 {name=p5 sig_type=std_logic lab=Vf}
 C {devices/lab_pin.sym} 390 -210 0 0 {name=p7 sig_type=std_logic lab=RST}
 C {devices/lab_pin.sym} 110 -210 2 0 {name=p2 sig_type=std_logic lab=ENAD}
 C {devices/lab_pin.sym} 0 -30 0 0 {name=p12 sig_type=std_logic lab=RST}
-C {devices/lab_pin.sym} 0 -50 0 0 {name=p6 sig_type=std_logic lab=Vf}
 C {madvlsi/vsource.sym} 250 -180 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} 250 -150 0 0 {name=l8 lab=GND}
 C {madvlsi/vdd.sym} 250 -210 0 0 {name=l9 lab=VDD}
-C {../schematics/bias_lds.sym} -290 -100 0 0 {name=x1}
+C {../schematics/bias_lds.sym} -250 -60 0 0 {name=x1}
 C {madvlsi/vsource.sym} 520 -180 0 0 {name=Vclk
 value="pulse(0 1.8 100n 100n 100n 2.4u 5u)"}
 C {madvlsi/gnd.sym} 520 -150 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 520 -210 0 0 {name=p8 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 0 -10 0 0 {name=p15 sig_type=std_logic lab=CLK}
-C {devices/code.sym} 100 -370 0 0 {name=SPICE only_toplevel=false value=".tran 0.01u 50u
+C {devices/code.sym} 100 -370 0 0 {name=SPICE only_toplevel=false value=".tran 1n 20u
 .save all"}
 C {../schematics/ada_converter.sym} 60 -180 0 0 {name=x2 W_U=12 L_U=0.5}
 C {devices/lab_pin.sym} 110 -90 2 0 {name=p3 sig_type=std_logic lab=Dout}
@@ -96,3 +81,4 @@ C {madvlsi/gnd.sym} 390 -30 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 390 -90 0 0 {name=p10 sig_type=std_logic lab=REF_p}
 C {devices/lab_pin.sym} 70 -230 1 0 {name=p14 sig_type=std_logic lab=REF_p}
 C {devices/lab_pin.sym} 50 -230 1 0 {name=p19 sig_type=std_logic lab=REF_n}
+C {devices/lab_pin.sym} 0 -50 0 0 {name=p6 sig_type=std_logic lab=Vf}
