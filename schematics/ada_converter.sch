@@ -180,19 +180,19 @@ C {devices/lab_pin.sym} 0 -30 1 0 {name=p3 sig_type=std_logic lab=SH}
 C {devices/lab_pin.sym} 0 30 3 0 {name=p4 sig_type=std_logic lab=CLK}
 C {devices/ipin.sym} 180 -540 0 0 {name=p29 lab=CLK}
 C {../schematics/digital_control.sym} 330 -490 0 0 {name=x4}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -910 -30 0 0 {name=X5 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -740 -120 0 0 {name=X6 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -380 -120 2 0 {name=X7 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -740 30 0 0 {name=X8 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -380 30 2 0 {name=X9 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} -160 -30 0 0 {name=X10 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 0 0 1 0 {name=X11 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 160 -30 0 0 {name=X12 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 380 -120 0 0 {name=X13 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 380 30 0 0 {name=X14 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 740 30 2 0 {name=X15 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 740 -120 2 0 {name=X16 W_U=12 L_U=0.5}
-C {/home/madvlsi/algorithmic-ada-converter/schematics/switch.sym} 910 -30 0 0 {name=X17 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -910 -30 0 0 {name=X5 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -740 -120 0 0 {name=X6 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -380 -120 2 0 {name=X7 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -740 30 0 0 {name=X8 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -380 30 2 0 {name=X9 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} -160 -30 0 0 {name=X10 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 0 0 1 0 {name=X11 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 160 -30 0 0 {name=X12 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 380 -120 0 0 {name=X13 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 380 30 0 0 {name=X14 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 740 30 2 0 {name=X15 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 740 -120 2 0 {name=X16 W_U=12 L_U=0.5}
+C {../schematics/switch.sym} 910 -30 0 0 {name=X17 W_U=12 L_U=0.5}
 C {../schematics/inverter.sym} -500 -500 0 0 {name=X18}
 C {madvlsi/gnd.sym} -460 -470 0 0 {name=l13 lab=GND}
 C {madvlsi/vdd.sym} -460 -530 0 0 {name=l14 lab=VDD}
