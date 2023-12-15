@@ -1739,7 +1739,7 @@ C {madvlsi/gnd.sym} 1530 550 0 0 {name=l62 lab=GND}
 C {madvlsi/vdd.sym} 1530 490 0 0 {name=l63 lab=VDD}
 C {devices/lab_pin.sym} 2540 20 3 0 {name=p58 sig_type=std_logic lab=Cp_prime}
 C {devices/lab_pin.sym} 140 20 3 0 {name=p98 sig_type=std_logic lab=Cn_prime}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/digital_control.sym} 480 860 0 0 {name=X16}
+C {../schematics/digital_control.sym} 480 860 0 0 {name=X16}
 C {devices/lab_pin.sym} 330 780 0 0 {name=p99 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 330 800 0 0 {name=p101 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 330 760 0 0 {name=p100 sig_type=std_logic lab=ENAD}
