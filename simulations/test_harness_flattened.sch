@@ -426,7 +426,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 80 50 0 1 {name=Cmin_prime
-value=10p
+value=1p
 m=1}
 C {madvlsi/gnd.sym} 80 80 0 0 {name=l1 lab=GND}
 C {madvlsi/nmos3.sym} 150 170 0 0 {name=M3
@@ -629,7 +629,7 @@ C {madvlsi/gnd.sym} 690 280 0 0 {name=l3 lab=GND}
 C {madvlsi/gnd.sym} 600 110 0 0 {name=l4 lab=GND}
 C {madvlsi/pmos3.sym} 510 -50 2 1 {name=M16
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -644,7 +644,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 510 -110 2 0 {name=M17
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -659,7 +659,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 570 -110 2 1 {name=M18
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -674,7 +674,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 630 -110 2 0 {name=M19
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -689,7 +689,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 690 -110 2 1 {name=M20
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -704,7 +704,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 690 -50 2 0 {name=M21
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -812,7 +812,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 1100 50 0 1 {name=Cmin
-value=10p
+value=1p
 m=1}
 C {madvlsi/gnd.sym} 1100 80 0 0 {name=l9 lab=GND}
 C {madvlsi/pmos3.sym} 1320 80 1 1 {name=M28
@@ -876,7 +876,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 1520 50 0 0 {name=Cplus
-value=10p
+value=1p
 m=1}
 C {madvlsi/gnd.sym} 1520 80 0 0 {name=l10 lab=GND}
 C {madvlsi/nmos3.sym} 1960 250 2 0 {name=M32
@@ -1019,7 +1019,7 @@ C {madvlsi/gnd.sym} 2140 280 0 0 {name=l12 lab=GND}
 C {madvlsi/gnd.sym} 2050 110 0 0 {name=l13 lab=GND}
 C {madvlsi/pmos3.sym} 1960 -50 2 1 {name=M41
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -1034,7 +1034,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1960 -110 2 0 {name=M42
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -1049,7 +1049,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2020 -110 2 1 {name=M43
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -1064,7 +1064,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2080 -110 2 0 {name=M44
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -1079,7 +1079,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2140 -110 2 1 {name=M45
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -1094,7 +1094,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 2140 -50 2 0 {name=M46
 L=0.15
-W=1
+W=2
 body=VDD
 nf=1
 mult=1
@@ -1262,7 +1262,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 2610 50 0 0 {name=Cplus_prime
-value=10p
+value=1p
 m=1}
 C {madvlsi/gnd.sym} 2610 80 0 0 {name=l18 lab=GND}
 C {madvlsi/pmos3.sym} 1200 -830 2 0 {name=M57
@@ -1795,7 +1795,7 @@ value=0.5}
 C {madvlsi/gnd.sym} 1130 550 0 0 {name=l60 lab=GND}
 C {devices/lab_pin.sym} 1130 490 1 0 {name=p96 sig_type=std_logic lab=Vrefn}
 C {madvlsi/vsource.sym} 1220 520 0 0 {name=Vref_pos
-value=1.5}
+value=1}
 C {madvlsi/gnd.sym} 1220 550 0 0 {name=l61 lab=GND}
 C {devices/lab_pin.sym} 1220 490 1 0 {name=p97 sig_type=std_logic lab=Vrefp}
 C {../schematics/inverter.sym} 1320 520 0 0 {name=X11}
