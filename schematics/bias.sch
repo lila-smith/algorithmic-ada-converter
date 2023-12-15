@@ -74,8 +74,8 @@ lab=Vbn}
 N 250 -0 250 90 {
 lab=Vbn}
 C {madvlsi/nmos3.sym} 30 0 0 0 {name=M1
-L=2.5
-W=12
+L=0.15
+W=1
 body=GND
 nf=1
 mult=1
@@ -89,8 +89,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 170 0 0 0 {name=M2
-L=0.5
-W=12
+L=0.15
+W=1
 body=GND
 nf=1
 mult=1
@@ -104,8 +104,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 280 0 0 0 {name=M3
-L=0.5
-W=12
+L=0.15
+W=1
 body=GND
 nf=1
 mult=1
@@ -119,8 +119,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 390 0 0 0 {name=M4
-L=0.5
-W=12
+L=0.15
+W=1
 body=GND
 nf=1
 mult=1
@@ -134,8 +134,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -50 0 0 1 {name=M5
-L=0.5
-W=12
+L=0.15
+W=1
 body=GND
 nf=1
 mult=1
@@ -149,8 +149,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 390 -90 0 0 {name=M6
-L=0.5
-W=48
+L=0.15
+W=4
 body=GND
 nf=1
 mult=1
@@ -164,8 +164,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 530 -90 0 1 {name=M7
-L=0.5
-W=12
+L=0.15
+W=1
 body=GND
 nf=1
 mult=1
@@ -179,8 +179,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 30 -90 0 0 {name=M8
-L=0.5
-W=48
+L=0.15
+W=4
 body=VDD
 nf=1
 mult=1
@@ -194,8 +194,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 30 -180 0 0 {name=M9
-L=0.5
-W=12
+L=0.15
+W=1
 body=VDD
 nf=1
 mult=1
@@ -209,8 +209,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 170 -90 0 1 {name=M10
-L=0.5
-W=12
+L=0.15
+W=1
 body=VDD
 nf=1
 mult=1
@@ -224,8 +224,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 280 -180 0 1 {name=M11
-L=0.5
-W=12
+L=0.15
+W=1
 body=VDD
 nf=1
 mult=1
@@ -239,8 +239,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 390 -180 0 0 {name=M12
-L=2.5
-W=12
+L=0.15
+W=1
 body=VDD
 nf=1
 mult=1
@@ -254,8 +254,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 530 -180 0 0 {name=M13
-L=0.5
-W=12
+L=0.15
+W=1
 body=VDD
 nf=1
 mult=1
@@ -282,5 +282,5 @@ C {devices/opin.sym} 590 -90 0 0 {name=p3 lab=Vcn}
 C {devices/opin.sym} 250 90 0 0 {name=p4 lab=Vbn}
 C {devices/opin.sym} 470 -250 0 0 {name=p5 lab=Vbp}
 C {madvlsi/isource.sym} -50 -90 0 0 {name=I1
-value=100u}
+value=10u}
 C {madvlsi/vdd.sym} -50 -120 0 0 {name=l10 lab=VDD}
