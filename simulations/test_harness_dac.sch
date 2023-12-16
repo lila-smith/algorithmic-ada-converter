@@ -1689,9 +1689,9 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value=".tran 20n 40u
-.ic v(D_latch)=0 v(D1)=1.8 v(D2)=0 v(D3)=1.8
-.ic v(D_latch_bar)=1.8 v(x16.D1_bar)=0 v(x16.D2_bar)=1.8 v(x16.D3_bar)=0
+C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value=".tran 20n 24u
+.ic v(D_latch)=1.8 v(D2)=1.8 v(D1)=0 v(D0)=1.8 
+.ic v(D_latch_bar)=0 v(x16.D2_bar)=0 v(x16.D1_bar)=1.8 v(x16.D0_bar)=0
 .save all"}
 C {devices/lab_pin.sym} 1440 20 1 0 {name=p92 sig_type=std_logic lab=SH_pos}
 C {devices/lab_pin.sym} 1210 20 1 0 {name=p93 sig_type=std_logic lab=SH_neg}
@@ -1761,6 +1761,7 @@ C {devices/lab_pin.sym} 630 840 0 1 {name=p61 sig_type=std_logic lab=STOp_bar}
 C {devices/lab_pin.sym} 630 920 0 1 {name=p62 sig_type=std_logic lab=RCLp_bar}
 C {devices/lab_pin.sym} 330 800 0 0 {name=p66 sig_type=std_logic lab=RST}
 C {devices/lab_pin.sym} 330 820 0 0 {name=p63 sig_type=std_logic lab=D_in}
-C {devices/lab_pin.sym} 410 990 3 0 {name=p64 sig_type=std_logic lab=D1}
-C {devices/lab_pin.sym} 430 990 3 0 {name=p65 sig_type=std_logic lab=D2}
-C {devices/lab_pin.sym} 450 990 3 0 {name=p67 sig_type=std_logic lab=D3}
+C {devices/lab_pin.sym} 430 990 3 0 {name=p64 sig_type=std_logic lab=D1}
+C {devices/lab_pin.sym} 450 990 3 0 {name=p65 sig_type=std_logic lab=D2}
+C {devices/lab_pin.sym} 470 990 3 0 {name=p67 sig_type=std_logic lab=D3}
+C {devices/lab_pin.sym} 410 990 3 0 {name=p68 sig_type=std_logic lab=D0}
