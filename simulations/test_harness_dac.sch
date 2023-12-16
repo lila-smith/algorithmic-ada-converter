@@ -1665,11 +1665,11 @@ C {devices/lab_pin.sym} 560 330 3 0 {name=p26 sig_type=std_logic lab=D_latch_bar
 C {devices/lab_pin.sym} 2010 330 3 0 {name=p27 sig_type=std_logic lab=D_latch_bar}
 C {devices/lab_pin.sym} 2090 330 3 0 {name=p28 sig_type=std_logic lab=D_latch}
 C {madvlsi/vsource.sym} 1360 370 0 0 {name=Vpre
-value="pwl(0 1.8 1u 1.8 1u 0)"}
+value="pwl(0 1.8 1u 1.8 1.1u 0)"}
 C {madvlsi/gnd.sym} 1360 400 0 0 {name=l49 lab=GND}
 C {devices/lab_pin.sym} 1360 340 1 0 {name=p79 sig_type=std_logic lab=PRE}
 C {madvlsi/vsource.sym} 1530 370 0 0 {name=Vrst
-value="pwl(0 1.8 1u 1.8 1u 0)"}
+value="pwl(0 1.8 1u 1.8 1.1u 0)"}
 C {madvlsi/gnd.sym} 1530 400 0 0 {name=l52 lab=GND}
 C {devices/lab_pin.sym} 1530 340 1 0 {name=p82 sig_type=std_logic lab=RST}
 C {madvlsi/vsource.sym} 1710 370 0 0 {name=Venad
@@ -1690,10 +1690,10 @@ value=".option wnflag=1
 C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value="
 .ic v(D_latch)=0 v(D2)=0 v(D1)=0 v(D0)=0 
 .ic v(D_latch_bar)=1.8 v(x16.D2_bar)=1.8 v(x16.D1_bar)=1.8 v(x16.D0_bar)=1.8
-.param b3 = 1
-.param b2 = 1
+.param b3 = 0
+.param b2 = 0
 .param b1 = 0
-.param b0 = 1
+.param b0 = 0
 .control
   set wr_vecnames
   set wr_singlescale
@@ -1702,26 +1702,27 @@ C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value="
     if code eq 0
       alterparam b0 = 0
     else
-      alterparam b0 = code % 2
+      alterparam b0 = \{$&code % 2\}
     end
     if floor(code / 2) eq 0
       alterparam b1 = 0
     else
-      alterparam b1 = floor(code / 2) % 2
+      alterparam b1 = \{floor(\{$&code / 2\}) % 2\}
     end
     if floor(code / 4) eq 0
       alterparam b2 = 0
     else
-      alterparam b2 = floor(code / 4) % 2
+      alterparam b2 = \{floor(\{$&code / 4\}) % 2\}
     end
     if floor(code / 8) eq 0
       alterparam b3 = 0
     else
-      alterparam b3 = floor(code / 8) % 2
+      alterparam b3 = \{floor(\{$&code / 8\}) % 2\}
     end
+    reset
     save all
-    tran 10n 24u
-    wrdata ~/Documents/algorithmic-ada-converter/python/dac/dac.txt v(D_latch) v(Aout)
+    tran 10n 22u
+    wrdata ~/Documents/algorithmic-ada-converter/python/dac/dac.txt v(D_latch) v(Aout) v(SH_neg) v(SH_pos) 
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
