@@ -77,12 +77,6 @@ N -20 120 -20 130 {
 lab=ENAD_n}
 N 90 100 240 100 {
 lab=COMPout_p}
-N -420 -80 -420 80 {
-lab=Aout}
-N -360 -80 -360 80 {
-lab=COMPout_n}
-N -360 -0 -240 -0 {
-lab=COMPout_n}
 C {madvlsi/pmos3.sym} -160 -230 0 0 {name=M1
 L=L_U
 W=W_U
@@ -114,21 +108,6 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 80 -60 0 1 {name=M3
-L=L_U
-W=W_U
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 0 30 0 0 {name=M4
 L=L_U
 W=W_U
 body=GND
@@ -223,26 +202,11 @@ C {madvlsi/vdd.sym} -160 -260 0 0 {name=l2 lab=VDD}
 C {madvlsi/vdd.sym} 160 -260 0 0 {name=l3 lab=VDD}
 C {madvlsi/vdd.sym} 240 -260 0 0 {name=l4 lab=VDD}
 C {madvlsi/nmos3.sym} -160 30 0 0 {name=M10
-L=L_U
+L=2*L_U
 W=W_U
 body=GND
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 160 30 0 0 {name=M11
-L=L_U
-W=W_U
-body=GND
-nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -358,11 +322,11 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 100 300 0 1 {name=M19
-L=L_U
+L=2*L_U
 W=W_U
 body=GND
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -404,7 +368,6 @@ C {devices/ipin.sym} -270 -170 0 0 {name=p2 lab=Vcp}
 C {devices/ipin.sym} -190 30 0 0 {name=p3 lab=Vb}
 C {madvlsi/gnd.sym} -240 360 0 0 {name=l11 lab=GND}
 C {madvlsi/gnd.sym} 240 360 0 0 {name=l12 lab=GND}
-C {devices/opin.sym} -420 0 2 0 {name=p4 lab=Aout}
 C {devices/opin.sym} -240 100 2 0 {name=p5 lab=COMPout_n}
 C {devices/opin.sym} 240 100 0 0 {name=p6 lab=COMPout_p}
 C {devices/ipin.sym} 0 360 3 0 {name=p8 lab=ENAD_n}
@@ -413,29 +376,27 @@ C {devices/ipin.sym} 110 -60 2 0 {name=p10 lab=Ui}
 C {devices/lab_pin.sym} 270 -170 2 0 {name=p12 sig_type=std_logic lab=Vcp}
 C {devices/ipin.sym} 130 300 2 0 {name=p11 lab=ENAD_p}
 C {devices/lab_pin.sym} -20 120 2 0 {name=p13 sig_type=std_logic lab=ENAD_n}
-C {madvlsi/pmos3.sym} -390 -80 1 0 {name=M26
-L=L_U
+C {madvlsi/nmos3.sym} 0 30 0 0 {name=M4
+L=2*L_U
 W=W_U
-body=VDD
+body=GND
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} -390 -110 1 0 {name=p14 sig_type=std_logic lab=ENAD_p}
-C {devices/lab_pin.sym} -390 110 3 0 {name=p7 sig_type=std_logic lab=ENAD_n}
-C {madvlsi/nmos3.sym} -390 80 3 0 {name=M21
-L=L_U
+C {madvlsi/nmos3.sym} 160 30 0 0 {name=M11
+L=2*L_U
 W=W_U
 body=GND
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
