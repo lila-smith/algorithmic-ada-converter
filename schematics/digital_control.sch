@@ -30,13 +30,11 @@ lab=D0}
 N 450 -220 470 -220 {
 lab=D0}
 N 210 -200 230 -200 {
-lab=#net1}
+lab=D_bar}
 N 140 -280 140 -200 {
-lab=COMP_IN}
-N 140 -280 230 -280 {
-lab=COMP_IN}
+lab=D}
 N 230 -280 230 -220 {
-lab=COMP_IN}
+lab=D}
 N 150 -700 150 -610 {
 lab=SH}
 N 150 -700 220 -700 {
@@ -44,22 +42,18 @@ lab=SH}
 N 390 -130 390 -100 {
 lab=CLK_RST}
 N 230 -220 330 -220 {
-lab=COMP_IN}
+lab=D}
 N 230 -200 330 -200 {
-lab=#net1}
+lab=D_bar}
 N 190 -100 810 -100 {
 lab=CLK_RST}
-N 870 -220 930 -220 {
+N 870 -220 910 -220 {
 lab=D3}
-N 310 -350 310 -200 {
-lab=#net1}
-N 910 -290 910 -220 {
-lab=D3}
-N 910 -200 910 -130 {
-lab=D3_bar}
 N 870 -200 910 -200 {
 lab=D3_bar}
-C {devices/ipin.sym} 140 -200 0 0 {name=p1 lab=COMP_IN}
+N 140 -280 230 -280 {
+lab=D}
+C {devices/ipin.sym} 140 -200 0 0 {name=p1 lab=D}
 C {devices/opin.sym} 600 -300 3 0 {name=p7 lab=D1}
 C {devices/opin.sym} 740 -300 3 0 {name=p8 lab=D2}
 C {devices/opin.sym} 460 -300 3 0 {name=p9 lab=D0}
@@ -131,26 +125,11 @@ C {devices/lab_pin.sym} 1570 -670 2 1 {name=p25 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 1570 -870 2 1 {name=p13 sig_type=std_logic lab=D_bar}
 C {devices/ipin.sym} 130 -90 0 0 {name=p26 lab=RST}
 C {devices/lab_pin.sym} 130 -110 2 1 {name=p27 sig_type=std_logic lab=SH}
-C {devices/opin.sym} 930 -220 0 0 {name=p28 lab=D3}
+C {devices/opin.sym} 910 -220 0 0 {name=p28 lab=D3}
 C {devices/lab_pin.sym} 260 -100 1 1 {name=p2 sig_type=std_logic lab=CLK_RST}
 C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/nor2.sym} 160 -100 0 0 {name=X7}
 C {devices/lab_pin.sym} 460 -200 1 1 {name=p6 sig_type=std_logic lab=D0_bar}
 C {devices/lab_pin.sym} 740 -200 1 1 {name=p24 sig_type=std_logic lab=D2_bar}
 C {devices/lab_pin.sym} 600 -200 1 1 {name=p30 sig_type=std_logic lab=D1_bar}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/switch.sym} 140 -310 0 0 {name=X3 W_U=12 L_U=0.5}
-C {devices/lab_pin.sym} 140 -340 3 1 {name=p31 sig_type=std_logic lab=D}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/switch.sym} 310 -380 0 0 {name=X8 W_U=12 L_U=0.5}
-C {devices/lab_pin.sym} 310 -410 3 1 {name=p32 sig_type=std_logic lab=D_bar}
-C {devices/lab_pin.sym} 110 -310 2 1 {name=p33 sig_type=std_logic lab=ENAD}
-C {devices/lab_pin.sym} 170 -310 0 1 {name=p34 sig_type=std_logic lab=ENAD_bar}
-C {devices/lab_pin.sym} 280 -380 2 1 {name=p35 sig_type=std_logic lab=ENAD}
-C {devices/lab_pin.sym} 340 -380 0 1 {name=p36 sig_type=std_logic lab=ENAD_bar}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/switch.sym} 910 -320 2 0 {name=X9 W_U=12 L_U=0.5}
-C {devices/lab_pin.sym} 880 -320 2 1 {name=p38 sig_type=std_logic lab=ENAD}
-C {devices/lab_pin.sym} 940 -320 0 1 {name=p39 sig_type=std_logic lab=ENAD_bar}
-C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/switch.sym} 910 -100 2 0 {name=X15 W_U=12 L_U=0.5}
-C {devices/lab_pin.sym} 880 -100 2 1 {name=p41 sig_type=std_logic lab=ENAD}
-C {devices/lab_pin.sym} 940 -100 0 1 {name=p42 sig_type=std_logic lab=ENAD_bar}
-C {devices/opin.sym} 910 -350 3 0 {name=p43 lab=D}
-C {devices/opin.sym} 910 -70 1 0 {name=p37 lab=D_bar}
+C {devices/opin.sym} 280 -200 1 0 {name=p37 lab=D_bar}
 C {devices/lab_pin.sym} 910 -200 0 1 {name=p29 sig_type=std_logic lab=D3_bar}

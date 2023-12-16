@@ -1658,20 +1658,18 @@ C {madvlsi/vsource.sym} 930 370 0 0 {name=Vclk
 value="pulse(0 1.8 100n 100n 100n 2.4u 5u)"}
 C {madvlsi/gnd.sym} 930 400 0 0 {name=l29 lab=GND}
 C {devices/lab_pin.sym} 930 340 1 0 {name=p56 sig_type=std_logic lab=CLK}
-C {madvlsi/vsource.sym} 1120 370 0 0 {name=VD
-value="pwl(0 0 3u 0 3.2u 1.8 13u 1.8 13.5u 0)"}
 C {madvlsi/gnd.sym} 1120 400 0 0 {name=l30 lab=GND}
-C {devices/lab_pin.sym} 1120 340 1 0 {name=p57 sig_type=std_logic lab=D_in}
+C {devices/lab_pin.sym} 1120 340 1 0 {name=p57 sig_type=std_logic lab=D_latch}
 C {devices/lab_pin.sym} 640 330 3 0 {name=p25 sig_type=std_logic lab=D_latch}
 C {devices/lab_pin.sym} 560 330 3 0 {name=p26 sig_type=std_logic lab=D_latch_bar}
 C {devices/lab_pin.sym} 2010 330 3 0 {name=p27 sig_type=std_logic lab=D_latch_bar}
 C {devices/lab_pin.sym} 2090 330 3 0 {name=p28 sig_type=std_logic lab=D_latch}
 C {madvlsi/vsource.sym} 1360 370 0 0 {name=Vpre
-value="pwl(0 1.8 2u 1.8 2.1u 0)"}
+value="pwl(0 1.8 1u 1.8 1u 0)"}
 C {madvlsi/gnd.sym} 1360 400 0 0 {name=l49 lab=GND}
 C {devices/lab_pin.sym} 1360 340 1 0 {name=p79 sig_type=std_logic lab=PRE}
 C {madvlsi/vsource.sym} 1530 370 0 0 {name=Vrst
-value="pwl(0 1.8 2u 1.8 2.1u 0)"}
+value="pwl(0 1.8 1u 1.8 1u 0)"}
 C {madvlsi/gnd.sym} 1530 400 0 0 {name=l52 lab=GND}
 C {devices/lab_pin.sym} 1530 340 1 0 {name=p82 sig_type=std_logic lab=RST}
 C {madvlsi/vsource.sym} 1710 370 0 0 {name=Venad
@@ -1689,10 +1687,48 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value=".tran 20n 24u
-.ic v(D_latch)=1.8 v(D2)=1.8 v(D1)=0 v(D0)=1.8 
-.ic v(D_latch_bar)=0 v(x16.D2_bar)=0 v(x16.D1_bar)=1.8 v(x16.D0_bar)=0
-.save all"}
+C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value="
+.ic v(D_latch)=0 v(D2)=0 v(D1)=0 v(D0)=0 
+.ic v(D_latch_bar)=1.8 v(x16.D2_bar)=1.8 v(x16.D1_bar)=1.8 v(x16.D0_bar)=1.8
+.param b3 = 1
+.param b2 = 1
+.param b1 = 0
+.param b0 = 1
+.control
+  set wr_vecnames
+  set wr_singlescale
+  let code = 0
+  while code < 16
+    if code eq 0
+      alterparam b0 = 0
+    else
+      alterparam b0 = code % 2
+    end
+    if floor(code / 2) eq 0
+      alterparam b1 = 0
+    else
+      alterparam b1 = floor(code / 2) % 2
+    end
+    if floor(code / 4) eq 0
+      alterparam b2 = 0
+    else
+      alterparam b2 = floor(code / 4) % 2
+    end
+    if floor(code / 8) eq 0
+      alterparam b3 = 0
+    else
+      alterparam b3 = floor(code / 8) % 2
+    end
+    save all
+    tran 10n 24u
+    wrdata ~/Documents/algorithmic-ada-converter/python/dac/dac.txt v(D_latch) v(Aout)
+    if code eq 0
+      set appendwrite
+      set wr_vecnames = FALSE
+    end
+    let code = code + 1
+  end
+.endc"}
 C {devices/lab_pin.sym} 1440 20 1 0 {name=p92 sig_type=std_logic lab=SH_pos}
 C {devices/lab_pin.sym} 1210 20 1 0 {name=p93 sig_type=std_logic lab=SH_neg}
 C {madvlsi/pmos3.sym} 930 -800 3 1 {name=M79
@@ -1747,8 +1783,7 @@ C {devices/lab_pin.sym} 330 760 0 0 {name=p100 sig_type=std_logic lab=ENAD}
 C {devices/lab_pin.sym} 330 740 0 0 {name=p102 sig_type=std_logic lab=PRE}
 C {devices/lab_pin.sym} 630 800 2 0 {name=p103 sig_type=std_logic lab=SH_bar}
 C {devices/lab_pin.sym} 630 780 2 0 {name=p104 sig_type=std_logic lab=SH}
-C {devices/lab_pin.sym} 370 990 3 0 {name=p83 sig_type=std_logic lab=D_latch}
-C {devices/lab_pin.sym} 390 990 3 0 {name=p84 sig_type=std_logic lab=D_latch_bar}
+C {devices/lab_pin.sym} 370 990 3 0 {name=p84 sig_type=std_logic lab=D_latch_bar}
 C {devices/lab_pin.sym} 630 740 0 1 {name=p85 sig_type=std_logic lab=PRE_bar}
 C {devices/lab_pin.sym} 630 760 0 1 {name=p105 sig_type=std_logic lab=ENAD_bar}
 C {devices/lab_pin.sym} 630 860 0 1 {name=p106 sig_type=std_logic lab=STOn}
@@ -1760,8 +1795,10 @@ C {devices/lab_pin.sym} 630 960 0 1 {name=p60 sig_type=std_logic lab=RCLn_bar}
 C {devices/lab_pin.sym} 630 840 0 1 {name=p61 sig_type=std_logic lab=STOp_bar}
 C {devices/lab_pin.sym} 630 920 0 1 {name=p62 sig_type=std_logic lab=RCLp_bar}
 C {devices/lab_pin.sym} 330 800 0 0 {name=p66 sig_type=std_logic lab=RST}
-C {devices/lab_pin.sym} 330 820 0 0 {name=p63 sig_type=std_logic lab=D_in}
-C {devices/lab_pin.sym} 430 990 3 0 {name=p64 sig_type=std_logic lab=D1}
-C {devices/lab_pin.sym} 450 990 3 0 {name=p65 sig_type=std_logic lab=D2}
-C {devices/lab_pin.sym} 470 990 3 0 {name=p67 sig_type=std_logic lab=D3}
-C {devices/lab_pin.sym} 410 990 3 0 {name=p68 sig_type=std_logic lab=D0}
+C {devices/lab_pin.sym} 410 990 3 0 {name=p64 sig_type=std_logic lab=D1}
+C {devices/lab_pin.sym} 430 990 3 0 {name=p65 sig_type=std_logic lab=D2}
+C {devices/lab_pin.sym} 450 990 3 0 {name=p67 sig_type=std_logic lab=D3}
+C {devices/lab_pin.sym} 390 990 3 0 {name=p68 sig_type=std_logic lab=D0}
+C {madvlsi/vsource.sym} 1120 370 0 0 {name=VD
+value="pwl(0 \{1.8*b3\} 5.1u \{1.8*b3\} 9.9u \{1.8*b3\} 10.1u \{1.8*b2\} 14.9u \{1.8*b2\} 15.1u \{1.8*b1\} 19.9u \{1.8*b1\} 20.1u \{1.8*b0\} 44.9u \{1.8*b0\})"}
+C {devices/lab_pin.sym} 330 820 0 0 {name=p69 sig_type=std_logic lab=D_latch}
