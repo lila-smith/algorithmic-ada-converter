@@ -6,56 +6,54 @@ V {}
 S {}
 E {}
 N 450 -200 470 -200 {
-lab=D0_bar}
-N 450 -220 470 -220 {
-lab=D0}
+lab=D3_bar}
 N 590 -200 610 -200 {
-lab=#net1}
-N 590 -220 610 -220 {
+lab=D2_bar}
+N 730 -220 750 -220 {
 lab=D1}
 N 730 -200 750 -200 {
-lab=#net2}
-N 730 -220 750 -220 {
+lab=D1_bar}
+N 590 -220 610 -220 {
 lab=D2}
 N 810 -130 810 -100 {
-lab=CLK}
+lab=CLK_RST}
 N 670 -130 670 -100 {
-lab=CLK}
+lab=CLK_RST}
 N 530 -130 530 -100 {
-lab=CLK}
-N 600 -300 600 -220 {
-lab=D1}
+lab=CLK_RST}
 N 740 -300 740 -220 {
+lab=D1}
+N 600 -300 600 -220 {
 lab=D2}
-N 890 -300 890 -220 {
+N 460 -300 460 -220 {
 lab=D3}
-N 870 -220 890 -220 {
+N 450 -220 470 -220 {
 lab=D3}
-N 310 -200 330 -200 {
-lab=D_bar}
-N 240 -280 240 -200 {
-lab=D}
-N 240 -280 330 -280 {
-lab=D}
-N 330 -280 330 -220 {
-lab=D}
-N 320 -100 810 -100 {
-lab=CLK}
+N 290 -200 310 -200 {
+lab=#net1}
+N 220 -280 220 -200 {
+lab=D_in}
+N 220 -280 310 -280 {
+lab=D_in}
+N 310 -280 310 -220 {
+lab=D_in}
 N 150 -700 150 -610 {
 lab=SH}
 N 150 -700 220 -700 {
 lab=SH}
-N 460 -200 460 -180 {
-lab=D0_bar}
 N 390 -130 390 -100 {
-lab=CLK}
-N 460 -300 460 -220 {
-lab=D0}
-C {devices/ipin.sym} 240 -200 0 0 {name=p1 lab=D}
-C {devices/opin.sym} 600 -300 3 0 {name=p7 lab=D1}
-C {devices/opin.sym} 740 -300 3 0 {name=p8 lab=D2}
-C {devices/opin.sym} 890 -300 3 0 {name=p9 lab=D3}
-C {devices/ipin.sym} 320 -100 0 0 {name=p10 lab=CLK}
+lab=CLK_RST}
+N 310 -220 330 -220 {
+lab=D_in}
+N 310 -200 330 -200 {
+lab=#net1}
+N 190 -100 810 -100 {
+lab=CLK_RST}
+C {devices/ipin.sym} 220 -200 0 0 {name=p1 lab=D_in}
+C {devices/opin.sym} 740 -300 3 0 {name=p7 lab=D1}
+C {devices/opin.sym} 600 -300 3 0 {name=p8 lab=D2}
+C {devices/opin.sym} 460 -300 3 0 {name=p9 lab=D3}
+C {devices/ipin.sym} 80 -610 0 0 {name=p10 lab=CLK}
 C {../schematics/CRSL_edge_sens.sym} 440 -120 0 0 {name=x4}
 C {../schematics/CRSL_edge_sens.sym} 580 -120 0 0 {name=x5}
 C {../schematics/CRSL_edge_sens.sym} 720 -120 0 0 {name=x6}
@@ -88,9 +86,9 @@ C {../schematics/inverter.sym} 1300 -660 0 0 {name=X18}
 C {../schematics/nand2.sym} 1560 -790 0 0 {name=x19}
 C {../schematics/nand2.sym} 1560 -590 0 0 {name=x20}
 C {../schematics/nand2.sym} 1170 -590 0 0 {name=x21}
-C {madvlsi/gnd.sym} 270 -170 0 0 {name=l31 lab=GND}
-C {madvlsi/vdd.sym} 270 -230 0 0 {name=l32 lab=VDD}
-C {../schematics/inverter.sym} 230 -200 0 0 {name=X23}
+C {madvlsi/gnd.sym} 250 -170 0 0 {name=l31 lab=GND}
+C {madvlsi/vdd.sym} 250 -230 0 0 {name=l32 lab=VDD}
+C {../schematics/inverter.sym} 210 -200 0 0 {name=X23}
 C {madvlsi/gnd.sym} 540 -580 0 0 {name=l50 lab=GND}
 C {madvlsi/vdd.sym} 540 -640 0 0 {name=l51 lab=VDD}
 C {../schematics/inverter.sym} 70 -610 0 0 {name=X12}
@@ -99,7 +97,6 @@ C {madvlsi/vdd.sym} 110 -640 0 0 {name=l54 lab=VDD}
 C {../schematics/inverter.sym} 140 -610 0 0 {name=X1}
 C {madvlsi/gnd.sym} 180 -580 0 0 {name=l55 lab=GND}
 C {madvlsi/vdd.sym} 180 -640 0 0 {name=l56 lab=VDD}
-C {devices/lab_pin.sym} 80 -610 0 0 {name=p83 sig_type=std_logic lab=CLK}
 C {madvlsi/gnd.sym} 890 -580 0 0 {name=l58 lab=GND}
 C {madvlsi/vdd.sym} 890 -640 0 0 {name=l59 lab=VDD}
 C {../schematics/inverter.sym} 500 -610 0 0 {name=X11}
@@ -114,14 +111,20 @@ C {devices/opin.sym} 1770 -660 0 0 {name=p15 lab=STOp}
 C {devices/opin.sym} 1380 -860 0 0 {name=p18 lab=STOn}
 C {devices/opin.sym} 1380 -660 0 0 {name=p19 lab=RCLp}
 C {devices/opin.sym} 1770 -860 0 0 {name=p20 lab=RCLn}
-C {devices/opin.sym} 460 -180 1 0 {name=p2 lab=D0_bar}
 C {devices/lab_pin.sym} 1180 -670 2 1 {name=p12 sig_type=std_logic lab=D}
 C {devices/opin.sym} 1310 -860 3 0 {name=p14 lab=STOn_bar}
 C {devices/opin.sym} 1700 -660 3 0 {name=p21 lab=STOp_bar}
 C {devices/opin.sym} 1700 -860 3 0 {name=p22 lab=RCLn_bar}
 C {devices/opin.sym} 1310 -660 3 0 {name=p23 lab=RCLp_bar}
 C {../schematics/CRSL_edge_sens.sym} 300 -120 0 0 {name=x2}
-C {devices/opin.sym} 460 -300 3 0 {name=p6 lab=D0}
 C {devices/lab_pin.sym} 1570 -670 2 1 {name=p25 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 1570 -870 2 1 {name=p13 sig_type=std_logic lab=D_bar}
-C {devices/opin.sym} 320 -200 1 0 {name=p24 lab=D_bar}
+C {devices/ipin.sym} 130 -90 0 0 {name=p26 lab=RST}
+C {devices/lab_pin.sym} 130 -110 2 1 {name=p27 sig_type=std_logic lab=SH}
+C {devices/opin.sym} 870 -220 0 0 {name=p28 lab=D}
+C {devices/opin.sym} 870 -200 0 0 {name=p29 lab=D_bar}
+C {devices/lab_pin.sym} 260 -100 1 1 {name=p2 sig_type=std_logic lab=CLK_RST}
+C {/home/madvlsi/Documents/algorithmic-ada-converter/schematics/nor2.sym} 160 -100 0 0 {name=X7}
+C {devices/lab_pin.sym} 460 -200 1 1 {name=p6 sig_type=std_logic lab=D3_bar}
+C {devices/lab_pin.sym} 600 -200 1 1 {name=p24 sig_type=std_logic lab=D2_bar}
+C {devices/lab_pin.sym} 740 -200 1 1 {name=p30 sig_type=std_logic lab=D1_bar}

@@ -1661,7 +1661,7 @@ C {devices/lab_pin.sym} 930 340 1 0 {name=p56 sig_type=std_logic lab=CLK}
 C {madvlsi/vsource.sym} 1120 370 0 0 {name=VD
 value="pwl(0 0 3u 0 3.2u 1.8 13u 1.8 13.5u 0)"}
 C {madvlsi/gnd.sym} 1120 400 0 0 {name=l30 lab=GND}
-C {devices/lab_pin.sym} 1120 340 1 0 {name=p57 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 1120 340 1 0 {name=p57 sig_type=std_logic lab=D_in}
 C {devices/lab_pin.sym} 640 330 3 0 {name=p25 sig_type=std_logic lab=D_latch}
 C {devices/lab_pin.sym} 560 330 3 0 {name=p26 sig_type=std_logic lab=D_latch_bar}
 C {devices/lab_pin.sym} 2010 330 3 0 {name=p27 sig_type=std_logic lab=D_latch_bar}
@@ -1689,7 +1689,9 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value=".tran 10n 40u
+C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value=".tran 20n 40u
+.ic v(D_latch)=0 v(D1)=1.8 v(D2)=0 v(D3)=1.8
+.ic v(D_latch_bar)=1.8 v(x16.D1_bar)=0 v(x16.D2_bar)=1.8 v(x16.D3_bar)=0
 .save all"}
 C {devices/lab_pin.sym} 1440 20 1 0 {name=p92 sig_type=std_logic lab=SH_pos}
 C {devices/lab_pin.sym} 1210 20 1 0 {name=p93 sig_type=std_logic lab=SH_neg}
@@ -1740,8 +1742,7 @@ C {madvlsi/vdd.sym} 1530 490 0 0 {name=l63 lab=VDD}
 C {devices/lab_pin.sym} 2540 20 3 0 {name=p58 sig_type=std_logic lab=Cp_prime}
 C {devices/lab_pin.sym} 140 20 3 0 {name=p98 sig_type=std_logic lab=Cn_prime}
 C {../schematics/digital_control.sym} 480 860 0 0 {name=X16}
-C {devices/lab_pin.sym} 330 780 0 0 {name=p99 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 330 800 0 0 {name=p101 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 330 780 0 0 {name=p101 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 330 760 0 0 {name=p100 sig_type=std_logic lab=ENAD}
 C {devices/lab_pin.sym} 330 740 0 0 {name=p102 sig_type=std_logic lab=PRE}
 C {devices/lab_pin.sym} 630 800 2 0 {name=p103 sig_type=std_logic lab=SH_bar}
@@ -1758,3 +1759,8 @@ C {devices/lab_pin.sym} 630 880 0 1 {name=p59 sig_type=std_logic lab=STOn_bar}
 C {devices/lab_pin.sym} 630 960 0 1 {name=p60 sig_type=std_logic lab=RCLn_bar}
 C {devices/lab_pin.sym} 630 840 0 1 {name=p61 sig_type=std_logic lab=STOp_bar}
 C {devices/lab_pin.sym} 630 920 0 1 {name=p62 sig_type=std_logic lab=RCLp_bar}
+C {devices/lab_pin.sym} 330 800 0 0 {name=p66 sig_type=std_logic lab=RST}
+C {devices/lab_pin.sym} 330 820 0 0 {name=p63 sig_type=std_logic lab=D_in}
+C {devices/lab_pin.sym} 410 990 3 0 {name=p64 sig_type=std_logic lab=D1}
+C {devices/lab_pin.sym} 430 990 3 0 {name=p65 sig_type=std_logic lab=D2}
+C {devices/lab_pin.sym} 450 990 3 0 {name=p67 sig_type=std_logic lab=D3}
