@@ -201,21 +201,6 @@ C {madvlsi/vdd.sym} -240 -260 0 0 {name=l1 lab=VDD}
 C {madvlsi/vdd.sym} -160 -260 0 0 {name=l2 lab=VDD}
 C {madvlsi/vdd.sym} 160 -260 0 0 {name=l3 lab=VDD}
 C {madvlsi/vdd.sym} 240 -260 0 0 {name=l4 lab=VDD}
-C {madvlsi/nmos3.sym} -160 30 0 0 {name=M10
-L=2*L_U
-W=W_U
-body=GND
-nf=1
-mult=2
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {madvlsi/nmos3.sym} -240 160 0 1 {name=M12
 L=L_U
 W=W_U
@@ -351,14 +336,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/capacitor.sym} -100 540 0 0 {name=C1
-value=1p
-m=1}
-C {madvlsi/capacitor.sym} 100 540 0 0 {name=C2
-value=1p
-m=1}
-C {madvlsi/gnd.sym} -100 570 0 0 {name=l5 lab=GND}
-C {madvlsi/gnd.sym} 100 570 0 0 {name=l6 lab=GND}
 C {madvlsi/gnd.sym} 0 60 0 0 {name=l7 lab=GND}
 C {madvlsi/gnd.sym} 160 60 0 0 {name=l8 lab=GND}
 C {madvlsi/gnd.sym} -160 60 0 0 {name=l9 lab=GND}
@@ -376,12 +353,12 @@ C {devices/ipin.sym} 110 -60 2 0 {name=p10 lab=Ui}
 C {devices/lab_pin.sym} 270 -170 2 0 {name=p12 sig_type=std_logic lab=Vcp}
 C {devices/ipin.sym} 130 300 2 0 {name=p11 lab=ENAD_p}
 C {devices/lab_pin.sym} -20 120 2 0 {name=p13 sig_type=std_logic lab=ENAD_n}
-C {madvlsi/nmos3.sym} 0 30 0 0 {name=M4
-L=2*L_U
+C {madvlsi/nmos3.sym} 160 30 0 0 {name=M11
+L=L_U
 W=W_U
 body=GND
 nf=1
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -391,12 +368,27 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 160 30 0 0 {name=M11
-L=2*L_U
+C {madvlsi/nmos3.sym} 0 30 0 0 {name=M4
+L=L_U
 W=W_U
 body=GND
 nf=1
-mult=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -160 30 0 0 {name=M10
+L=L_U
+W=W_U
+body=GND
+nf=1
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
