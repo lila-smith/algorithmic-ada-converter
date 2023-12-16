@@ -1573,36 +1573,6 @@ C {madvlsi/gnd.sym} 1250 -260 0 0 {name=l25 lab=GND}
 C {madvlsi/gnd.sym} 1390 -260 0 0 {name=l26 lab=GND}
 C {madvlsi/gnd.sym} 1440 -390 0 0 {name=l27 lab=GND}
 C {madvlsi/gnd.sym} 1200 -390 0 0 {name=l28 lab=GND}
-C {madvlsi/pmos3.sym} 990 -560 3 1 {name=M77
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 990 -440 1 1 {name=M78
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 1360 -450 0 0 {name=p1 sig_type=std_logic lab=ENAD}
 C {devices/lab_pin.sym} 1320 -390 0 0 {name=p2 sig_type=std_logic lab=ENAD_bar}
 C {devices/lab_pin.sym} 1320 -290 3 0 {name=p3 sig_type=std_logic lab=RST}
@@ -1655,7 +1625,7 @@ C {devices/lab_pin.sym} 1320 -600 2 0 {name=p53 sig_type=std_logic lab=ENAD_bar}
 C {devices/lab_pin.sym} 990 -590 1 0 {name=p54 sig_type=std_logic lab=ENAD}
 C {devices/lab_pin.sym} 990 -410 1 1 {name=p55 sig_type=std_logic lab=ENAD_bar}
 C {madvlsi/vsource.sym} 930 370 0 0 {name=Vclk
-value="pulse(0 1.8 100n 100n 100n 2.4u 5u)"}
+value="pulse(0 1.8 100n 100n 100n 4.8u 10u)"}
 C {madvlsi/gnd.sym} 930 400 0 0 {name=l29 lab=GND}
 C {devices/lab_pin.sym} 930 340 1 0 {name=p56 sig_type=std_logic lab=CLK}
 C {madvlsi/gnd.sym} 1120 400 0 0 {name=l30 lab=GND}
@@ -1721,23 +1691,26 @@ C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value="
     end
     reset
     save all
-    tran 10n 22u
-    wrdata ~/Documents/algorithmic-ada-converter/python/dac/dac.txt v(D_latch) v(Aout) v(SH_neg) v(SH_pos) 
+    tran 20n 47u
+    wrdata ~/Documents/algorithmic-ada-converter/python/dac/dac.txt v(D_latch) v(Aout) v(SH_neg) v(SH_pos)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
     end
     let code = code + 1
   end
-.endc"}
+.endc"
+
+     
+}
 C {devices/lab_pin.sym} 1440 20 1 0 {name=p92 sig_type=std_logic lab=SH_pos}
 C {devices/lab_pin.sym} 1210 20 1 0 {name=p93 sig_type=std_logic lab=SH_neg}
-C {madvlsi/pmos3.sym} 930 -800 3 1 {name=M79
+C {madvlsi/pmos3.sym} 930 -680 1 1 {name=M79
 L=0.15
 W=1
 body=VDD
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1747,12 +1720,12 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 930 -680 1 1 {name=M80
+C {madvlsi/nmos3.sym} 930 -800 3 1 {name=M80
 L=0.15
 W=1
 body=GND
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1801,5 +1774,35 @@ C {devices/lab_pin.sym} 430 990 3 0 {name=p65 sig_type=std_logic lab=D2}
 C {devices/lab_pin.sym} 450 990 3 0 {name=p67 sig_type=std_logic lab=D3}
 C {devices/lab_pin.sym} 390 990 3 0 {name=p68 sig_type=std_logic lab=D0}
 C {madvlsi/vsource.sym} 1120 370 0 0 {name=VD
-value="pwl(0 \{1.8*b3\} 5.1u \{1.8*b3\} 9.9u \{1.8*b3\} 10.1u \{1.8*b2\} 14.9u \{1.8*b2\} 15.1u \{1.8*b1\} 19.9u \{1.8*b1\} 20.1u \{1.8*b0\} 44.9u \{1.8*b0\})"}
+value="pwl(0 \{1.8*b3\} 10.2u \{1.8*b3\} 19.8u \{1.8*b3\} 20.2u \{1.8*b2\} 29.8u \{1.8*b2\} 30.1u \{1.8*b1\} 39.8u \{1.8*b1\} 40.2u \{1.8*b0\} 89.8u \{1.8*b0\})"}
 C {devices/lab_pin.sym} 330 820 0 0 {name=p69 sig_type=std_logic lab=D_latch}
+C {madvlsi/pmos3.sym} 990 -440 1 1 {name=M77
+L=0.15
+W=1
+body=VDD
+nf=1
+mult=2
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} 990 -560 3 1 {name=M78
+L=0.15
+W=1
+body=GND
+nf=1
+mult=2
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
