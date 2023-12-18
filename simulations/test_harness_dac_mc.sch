@@ -1654,7 +1654,7 @@ C {madvlsi/tt_models.sym} 110 530 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
-.param MC_SWITCH=0.0
+.param MC_SWITCH=1.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value="
@@ -1665,11 +1665,11 @@ C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value="
 .param b1 = 0
 .param b0 = 0
 .control
-  let runs = 2
+  let runs = 10
   let run = 1
   while run <= runs
+  set appendwrite = FALSE
   set wr_vecnames
-  set wr_singlescale
   let code = 0
   while code < 16
     if code eq 0
@@ -1703,6 +1703,7 @@ C {devices/code.sym} 270 530 0 0 {name=SPICE only_toplevel=false value="
     let code = code + 1
   end
   let run = run + 1
+  reset
   end
 .endc"
 
