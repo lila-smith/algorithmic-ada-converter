@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 codes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 all_outs = []
 for k in range(9):
-    if k == 2: continue
+    if k == 2: 
     fname = '/home/madvlsi/algorithmic-ada-converter/python/adc/adc' + str(k) + '.txt'
     with open(fname, "r") as f:
         contents = f.read().split()
