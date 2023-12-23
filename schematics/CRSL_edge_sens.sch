@@ -243,7 +243,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 810 -530 0 0 {name=M1
 L=0.15
-W=4
+W=8
 body=VDD
 nf=1
 mult=1

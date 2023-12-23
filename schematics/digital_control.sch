@@ -10,11 +10,11 @@ lab=D0_bar}
 N 450 -220 470 -220 {
 lab=D0}
 N 590 -200 610 -200 {
-lab=#net1}
+lab=D1_bar}
 N 590 -220 610 -220 {
 lab=D1}
 N 730 -200 750 -200 {
-lab=#net2}
+lab=D2_bar}
 N 730 -220 750 -220 {
 lab=D2}
 N 810 -130 810 -100 {
@@ -31,14 +31,8 @@ N 890 -300 890 -220 {
 lab=D3}
 N 870 -220 890 -220 {
 lab=D3}
-N 310 -200 330 -200 {
+N 840 -450 860 -450 {
 lab=D_bar}
-N 240 -280 240 -200 {
-lab=D}
-N 240 -280 330 -280 {
-lab=D}
-N 330 -280 330 -220 {
-lab=D}
 N 320 -100 810 -100 {
 lab=CLK}
 N 150 -700 150 -610 {
@@ -51,7 +45,7 @@ N 390 -130 390 -100 {
 lab=CLK}
 N 460 -300 460 -220 {
 lab=D0}
-C {devices/ipin.sym} 240 -200 0 0 {name=p1 lab=D}
+C {devices/ipin.sym} 770 -450 0 0 {name=p1 lab=D}
 C {devices/opin.sym} 600 -300 3 0 {name=p7 lab=D1}
 C {devices/opin.sym} 740 -300 3 0 {name=p8 lab=D2}
 C {devices/opin.sym} 890 -300 3 0 {name=p9 lab=D3}
@@ -88,9 +82,9 @@ C {../schematics/inverter.sym} 1300 -660 0 0 {name=X18}
 C {../schematics/nand2.sym} 1560 -790 0 0 {name=x19}
 C {../schematics/nand2.sym} 1560 -590 0 0 {name=x20}
 C {../schematics/nand2.sym} 1170 -590 0 0 {name=x21}
-C {madvlsi/gnd.sym} 270 -170 0 0 {name=l31 lab=GND}
-C {madvlsi/vdd.sym} 270 -230 0 0 {name=l32 lab=VDD}
-C {../schematics/inverter.sym} 230 -200 0 0 {name=X23}
+C {madvlsi/gnd.sym} 800 -420 0 0 {name=l31 lab=GND}
+C {madvlsi/vdd.sym} 800 -480 0 0 {name=l32 lab=VDD}
+C {../schematics/inverter.sym} 760 -450 0 0 {name=X23}
 C {madvlsi/gnd.sym} 540 -580 0 0 {name=l50 lab=GND}
 C {madvlsi/vdd.sym} 540 -640 0 0 {name=l51 lab=VDD}
 C {../schematics/inverter.sym} 70 -610 0 0 {name=X12}
@@ -124,4 +118,13 @@ C {../schematics/CRSL_edge_sens.sym} 300 -120 0 0 {name=x2}
 C {devices/opin.sym} 460 -300 3 0 {name=p6 lab=D0}
 C {devices/lab_pin.sym} 1570 -670 2 1 {name=p25 sig_type=std_logic lab=D_bar}
 C {devices/lab_pin.sym} 1570 -870 2 1 {name=p13 sig_type=std_logic lab=D_bar}
-C {devices/opin.sym} 320 -200 1 0 {name=p24 lab=D_bar}
+C {devices/opin.sym} 850 -450 1 0 {name=p24 lab=D_bar}
+C {madvlsi/gnd.sym} 890 -420 0 0 {name=l1 lab=GND}
+C {madvlsi/vdd.sym} 890 -480 0 0 {name=l2 lab=VDD}
+C {../schematics/inverter.sym} 850 -450 0 0 {name=X3}
+C {devices/lab_pin.sym} 330 -200 2 1 {name=p26 sig_type=std_logic lab=D_bar}
+C {devices/opin.sym} 930 -450 0 0 {name=p27 lab=D_latch}
+C {devices/lab_pin.sym} 330 -220 2 1 {name=p28 sig_type=std_logic lab=D_latch}
+C {devices/opin.sym} 600 -200 1 0 {name=p29 lab=D1_bar}
+C {devices/opin.sym} 740 -200 1 0 {name=p30 lab=D2_bar}
+C {devices/opin.sym} 870 -200 1 0 {name=p31 lab=D3_bar}
